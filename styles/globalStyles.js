@@ -8,6 +8,16 @@ const GlobalStyle = createGlobalStyle`
     color: #fff;
     font-family: 'Montserrat', sans-serif;
   }
+
+  *{
+    text-decoration: none;
+  }
+  a:active {
+    color: #dbdbdb;
+  }
+  a{
+    color: #fff;
+  }
 `;
 
 export default GlobalStyle;
