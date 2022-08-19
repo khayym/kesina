@@ -10,7 +10,7 @@ export const CustomMenu = () => {
                 <Burger
                     size={24}
                     opened={opened}
-                    color={'#fff'}
+                    color={'#000'}
                     onClick={() => setOpened((o) => !o)}
                 />
             </Menu.Target>
