@@ -75,24 +75,71 @@ export const MainPageContainer = styled.main`
         margin-top: 4.2rem;
         display: flex;
         flex-direction:column;
-        
-        .section1{
-            display: flex;
-            /* align-items: center; */
-            width: 100%;
+        overflow:hidden;
 
-            .sec-lent{
-                border: 1px solid #11dbff;
-                width: 100%;
+
+    .section2Grid{
+        border: 1px solid red;
+
+        /* min-height:830px; */
+        align-items: center;
+        /* min-height:800px; */
+    }
+
+        .gridCol1{
+            border: 1px solid red !important;
+            height: 100%;
+
+           
+                @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}) {
+                    padding-right:24px;
+                 
+                }
+        }
+
+        .gridCol2{
+            border: 1px solid blue !important;
+            padding-left:60px;
+            padding-right:120px;
+            
+            h4{
+                font-family: 'Montserrat';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                /* line-height: 140%; */
+                color: #FFFDFB;
+                flex: none;
+                order: 1;
             }
 
-            p{
-                width:100%;
+            @media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {
+                padding-left:20px;
+                padding-right:24px;
             }
 
-        @media (max-width:${({ theme: { breakPoints } }) => breakPoints.tablet}) {
-            flex-direction: column;
+            .sectionOneLinedText2{
+                @media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {display: none;}
+            }
         }
+
+
+        .section2Text{
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 140%;
+            color: #FFFDFB;
+            font-family: 'Montserrat';
         }
+
+        .sectionOneLinedText{
+            margin-bottom:50px;
+            @media(min-width:${({ theme: { breakPoints } }) => breakPoints.lg}) { display: none;}
+        }
+    }
+
+
+    section:nth-child(3){
+        border: 1px solid blue;
     }
 `

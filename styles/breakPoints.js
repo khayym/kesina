@@ -5,7 +5,7 @@ export const breakPoints = {
     lg: '1200px',
     xl: '1400px',
 
-    tablet: '900px',
+    tablet: '768px',
     mobile: '550px',
 }
 

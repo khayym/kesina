@@ -6,14 +6,12 @@ import { Layout } from '../layout/Layout'
 
 const AppProvider = ({ children }) => {
     return (
-        <div>
+        <ThemeProvider theme={theme}>
             <GlobalStyle />
-            <ThemeProvider theme={theme}>
-                <Layout>
-                    {children}
-                </Layout>
-            </ThemeProvider>
-        </div>
+            <Layout>
+                {children}
+            </Layout>
+        </ThemeProvider>
     )
 }
 

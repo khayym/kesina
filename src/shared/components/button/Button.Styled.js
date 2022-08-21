@@ -3,18 +3,23 @@ import styled, { css } from "styled-components";
 const variants = {
     primary: {
         bg: '#A91111',
-        color: '#FFFFFF',
-        border: '2px solid #A91111',
-        hover: '#880f0f',
-        active: '#740d0d'
+        color: '#fff',
+        border: '#A91111',
+        hoverBorder: '#A30909',
+        activeBorder: '#9B0909',
+        hoverBg: '#A30909',
+        activeBg: '#9B0909',
     },
     secondary: {
-        bg: "#272727",
+        bg: 'transparent',
         color: '#fff',
-        border: '2px solid #fff',
-        hover: "#1a1919",
-        active: "#111010"
-    },
+        border: '#fff',
+        hoverBorder: '#A30909',
+        activeBorder: '#9B0909',
+        hoverBg: 'transparent',
+        activeBg: 'transparent',
+    }
+
 };
 
 export const StyledButton = styled.button`
@@ -26,18 +31,19 @@ export const StyledButton = styled.button`
     cursor: pointer;
 
     :hover {
-       background-color: ${props => variants[props.variant].hover}; 
+       background-color: ${props => variants[props.variant].hoverBg}; 
        transition: all 0.3s ease-in-out;
        box-shadow: '0px 8px 16px rgba(34, 0, 106, 0.24)';
-       border:${props => variants[props.variant].border};  
+       border:${props => `2px solid ${variants[props.variant].hoverBorder}`};  
     }
 
     :active{
-        background-color: ${props => variants[props.variant].active}; 
+        background-color: ${props => variants[props.variant].activeBg}; 
+        border:${props => `2px solid ${variants[props.variant].borderActive}`};  
     }
     ${({ variant }) => css`
        background-color: ${variants[variant].bg};
        color: ${variants[variant].color};
-      border: ${variants[variant].border};
+       border:${props => `2px solid ${variants[props.variant].border}`};  
    `}
 `

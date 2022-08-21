@@ -6,14 +6,27 @@ export const HeaderContainer = styled.header`
     justify-content:space-between;
     padding:40px 120px;
     align-items: center;
+    width:-webkit-fill-available;
+    max-width:1358px;
     background:transparent;
     position:absolute;
     top:0;
-    width: -webkit-fill-available;
     z-index:1;
+
+
     a {
+        cursor: pointer;
         color: #000;
         font-weight:500;
+        transition: all 0.3s ease-in-out;
+        :hover{
+            color:#FF2E2E;
+            
+        }
+
+        :active{
+            color:#A91111;
+        }
     }
    
     @media(max-width:900px) {
