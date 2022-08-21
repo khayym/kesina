@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
-import styled from 'styled-components'
 import Image from 'next/image';
-import { Button } from '@mantine/core';
+import { ReadMoreWrap } from './ReadMore.Styled';
+
 
 function ArrowButton({ style }) {
-    console.log(style)
     return <Image src='/icons/downArrow.svg' width={10} height={5} alt='Arrow icon' id='arrowIcon' style={style} />
 }
 
@@ -16,24 +15,3 @@ export const ReadMore = () => {
         </ReadMoreWrap>
     )
 }
-const ReadMoreWrap = styled(Button)`
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    gap:10px;
-    justify-content: space-between;
-
-    p{
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 16px;
-        color: #FFFFFF;
-    }
-
-    :active{
-        background-color: transparent;
-        border:0px;
-        text-decoration:none;
-    }
-`

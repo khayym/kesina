@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
     background: #232323;
     color: #fff;
     max-width:1600px;
+    min-width:300px;
     font-family: 'Montserrat', sans-serif;
   }
 

@@ -5,7 +5,6 @@ export const MainPageContainer = styled.main`
     flex-direction: column;
     gap:4rem;
     section:nth-child(1) {
-        /* border:.0625rem solid #fff; */
         background-image:url(/images/main.png);
         height: 56rem;
         background-repeat: no-repeat;
@@ -71,26 +70,20 @@ export const MainPageContainer = styled.main`
     }
 
     section:nth-child(2) {
-        border: 1px solid yellow;
         margin-top: 4.2rem;
         display: flex;
         flex-direction:column;
         overflow:hidden;
 
-
     .section2Grid{
-        border: 1px solid red;
-
         /* min-height:830px; */
         align-items: center;
         /* min-height:800px; */
     }
 
         .gridCol1{
-            border: 1px solid red !important;
-            height: 100%;
 
-           
+            height: 100%;
                 @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}) {
                     padding-right:24px;
                  
@@ -98,7 +91,6 @@ export const MainPageContainer = styled.main`
         }
 
         .gridCol2{
-            border: 1px solid blue !important;
             padding-left:60px;
             padding-right:120px;
             
@@ -135,7 +127,7 @@ export const MainPageContainer = styled.main`
         .sectionOneLinedText{
             margin-bottom:50px;
             @media(min-width:${({ theme: { breakPoints } }) => breakPoints.lg}) { display: none;}
-        }
+        }    
     }
 
 

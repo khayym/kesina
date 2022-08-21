@@ -7,19 +7,19 @@ export const TextViaSpoiler = ({ children }) => {
     return (
         <TextWrapper>
             <div className="textSpoilerXl">
-                <Spoiler maxHeight={500} showLabel={<ReadMore />} hideLabel={<ReadMore />}>
+                <Spoiler maxHeight={500} showLabel={<ReadMore />} hideLabel={<ReadMore />} transitionDuration={300}>
                     {children}
                 </Spoiler>
             </div>
 
             <div className='textViaSpoilerTablet'>
-                <Spoiler maxHeight={357} showLabel={<ReadMore />} hideLabel={<ReadMore />}>
+                <Spoiler maxHeight={357} showLabel={<ReadMore />} hideLabel={<ReadMore />} transitionDuration={300}>
                     {children}
                 </Spoiler>
             </div>
 
             <div className='textViaSpoilerMobile'>
-                <Spoiler maxHeight={357} showLabel={<ReadMore />} hideLabel={<ReadMore />}>
+                <Spoiler maxHeight={359} showLabel={<ReadMore />} hideLabel={<ReadMore />} transitionDuration={300}>
                     {children}
                 </Spoiler>
             </div>
@@ -29,8 +29,6 @@ export const TextViaSpoiler = ({ children }) => {
 
 
 const TextWrapper = styled.div`
-    border: 1px solid green;
-
 
     @media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {
           .textSpoilerXl {

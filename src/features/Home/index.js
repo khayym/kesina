@@ -1,11 +1,11 @@
-import { Grid, Text, Spoiler } from '@mantine/core'
-import React, { useEffect } from 'react'
+import { Grid } from '@mantine/core'
 import { CutomButton } from '../../shared/components/button/Button'
 import { Lent } from '../../shared/components/imageLent/Lent'
 import { LinedText } from '../../shared/components/lindedText/LinedText'
-import { ReadMore } from '../../shared/components/readMore/ReadMore'
+import { Slider } from '../../shared/components/slider/Slider'
 import { TextViaSpoiler } from '../../shared/components/text/Text'
 import { MainPageContainer } from './Home.Styled'
+
 
 export const HomePage = () => {
     return (
@@ -49,6 +49,7 @@ export const HomePage = () => {
                         </TextViaSpoiler>
                     </Grid.Col>
                 </Grid>
+                <Slider />
             </section>
             <section>3</section>
         </MainPageContainer>

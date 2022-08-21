@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Lined = styled.div`
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     gap:26px;
@@ -11,11 +10,8 @@ export const Lined = styled.div`
         font-style: normal;
         font-weight: 600;
         font-size: ${({ size }) => size}px;
-               line-height: 43px;
-        /* identical to box height */
-
+        line-height: 43px;
         text-transform: uppercase;
-
         color: #FFFDFB;
     }
 
