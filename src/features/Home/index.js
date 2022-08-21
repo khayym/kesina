@@ -1,10 +1,11 @@
 import { Grid } from '@mantine/core'
+import { Banner } from '../../shared/components/banner/Banner'
 import { CutomButton } from '../../shared/components/button/Button'
 import { Lent } from '../../shared/components/imageLent/Lent'
 import { LinedText } from '../../shared/components/lindedText/LinedText'
 import { Slider } from '../../shared/components/slider/Slider'
 import { TextViaSpoiler } from '../../shared/components/text/Text'
-import { MainPageContainer } from './Home.Styled'
+import { MainPageContainer, Section3 } from './Home.Styled'
 
 
 export const HomePage = () => {
@@ -51,7 +52,10 @@ export const HomePage = () => {
                 </Grid>
                 <Slider />
             </section>
-            <section>3</section>
+            <Section3>
+                <LinedText text='услуги и обучения' className="sectionThreeLinedText" />
+                <Banner />
+            </Section3>
         </MainPageContainer>
     )
 }

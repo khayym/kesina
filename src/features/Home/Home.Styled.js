@@ -131,7 +131,19 @@ export const MainPageContainer = styled.main`
     }
 
 
-    section:nth-child(3){
+    /* section:nth-child(3){
         border: 1px solid blue;
+    } */
+`
+
+export const Section3 = styled.section`
+      border: 1px solid blue;
+      margin-left:7.5rem;
+      margin-right:7.5rem;
+      margin-bottom:7.5rem;
+
+      @media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {
+        margin-left:1.5rem;
+        margin-right:1.5rem;
     }
 `
