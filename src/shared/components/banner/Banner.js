@@ -1,43 +1,20 @@
-import { Grid, Image } from '@mantine/core'
+import { Grid } from '@mantine/core'
 import React from 'react'
-import styled from 'styled-components'
-import { CutomButton } from '../button/Button'
-import { StyledButton } from '../button/Button.Styled'
+import styled, { css } from 'styled-components'
 import { BannerText } from './banner-text'
 
-export const Banner = () => {
+export const Banner = ({ reverse, title, url, label, price, required, buttons }) => {
     return (
-        <BannerWraper columns={24}>
-            <Grid.Col span={11} className='bannerDiv1'>
-                {/* <Image
-                    src={'/images/banner-home/banner-home-1.png'}
-                    alt="Random unsplash image"
-                    className='banner-img'
-                /> */}
+        <BannerWraper columns={24} reverse={reverse} url={url}>
+            <Grid.Col sm={11} xs={24} className='bannerDiv1'>
             </Grid.Col>
-            <Grid.Col span={13} className='bannerDiv2'>
+            <Grid.Col sm={13} className='bannerDiv2'>
                 <BannerText
-                    title='стиль'
-                    required='Возможно онлайн'
-                    label={[
-                        {
-                            labelName: 'Услуга подойдет Вам если Вы хотите:',
-                            labelValue: [
-                                'Значительно улучшить свой внешний вид',
-                                'Стать моднее, стильнее и увереннее в себе',
-                                'Найти СВОЙ стиль'
-                            ],
-                            icon: 'icon-check'
-                        },
-                        {
-                            labelName: 'Длительность: ',
-                            labelValue: ['дни и время по договоренности'],
-                            icon: false
-                        }
-                    ]}
-                    price='от 18500 руб до 48500 руб '
-                    buttonOne={<CutomButton>Заказать</CutomButton>}
-                    buttonTwo={<CutomButton variant='secondary'>Узнать больше</CutomButton>}
+                    title={title}
+                    required={required}
+                    price={price}
+                    buttons={buttons}
+                    label={label}
                 />
             </Grid.Col>
         </BannerWraper>
@@ -46,31 +23,67 @@ export const Banner = () => {
 
 export const BannerWraper = styled(Grid)`
     /* background-color:#ffffff48; */
-    border: 1px solid #ff0909;
+    border: 1px solid #ffffff;
     border-radius: 0px 30px 30px 0px;
     /* height: 548px; */
     min-height: 548px;
     margin:0 1px;
+    display: flex;
+    flex-direction: ${props => props.reverse ? 'row-reverse' : 'row'};
+
+    ${props => props.reverse ? css`
+            border-radius: 30px 0px 0 30px;
+            ` : css`
+            border-radius: 0px 30px 30px 0px;
+            `
+    }
+
+    p,h3,h2,span,h1{
+        margin:0;
+    }
     .bannerDiv1 {
     
         border: 2px solid #fff;
-        padding:0 20px 0 0;
-        border-top-right-radius: 20rem !important;
-        border-bottom-right-radius: 20rem !important;
+       
+        min-height:230px;
         position: relative;
-        background-position: center ;
-        background-size:cover !important;
-        background-image: url('/images/banner-home/banner-home-1.png') ;
+        background-position: center;
+        background-size: cover;
+        background-image: ${props => `url(${props.url})`};
         background-clip: content-box;
         background-repeat: no-repeat;
        
+        ${props => props.reverse ? css`
+                padding:0 0 0 20px;
+                border-top-left-radius: 20rem !important;
+                border-bottom-left-radius: 20rem !important;
+                border-right: 0;
+            ` : css`
+               padding:0 20px 0 0;
+               border-top-right-radius: 20rem !important;
+               border-bottom-right-radius: 20rem !important;
+               border-left: 0;
+            `
+    }
+
+    @media (max-width: 768px) {
+        border: 0px solid #fff;
+        ${props => props.reverse ? 'padding-left: 45px' : 'padding-right: 45px'};
+        
+    }
 
     }
 
     .bannerDiv2 {
-        border: 1px solid blue;
-        padding:0 40px;
+        padding:0 60px;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {
+            padding:0 20px;
+      }
     }
 
+   
    
 `

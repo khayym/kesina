@@ -137,13 +137,33 @@ export const MainPageContainer = styled.main`
 `
 
 export const Section3 = styled.section`
-      border: 1px solid blue;
       margin-left:7.5rem;
       margin-right:7.5rem;
       margin-bottom:7.5rem;
-
+        display: flex;
+        flex-direction: column;
+        gap:50px;
       @media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {
         margin-left:1.5rem;
         margin-right:1.5rem;
     }
+`
+export const Section4 = styled.section`
+/* width:100%; */
+overflow:hidden;
+height:1200px;
+
+@media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {
+    height:1000px;
+}
+@media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {
+    height:880px;
+}
+@media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}) {
+    height:664px;
+}
+@media(max-width:${({ theme: { breakPoints } }) => breakPoints.xs}) {
+    height:340px;
+}
+/* height:100%; */
 `

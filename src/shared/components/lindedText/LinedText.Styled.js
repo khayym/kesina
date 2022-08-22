@@ -4,7 +4,7 @@ export const Lined = styled.div`
     display: flex;
     align-items: center;
     gap:26px;
-
+    /* justify-content: center; */
     h2{
         font-family: 'Playfair Display';
         font-style: normal;
@@ -13,6 +13,7 @@ export const Lined = styled.div`
         line-height: 43px;
         text-transform: uppercase;
         color: #FFFDFB;
+        text-align: center;
     }
 
     div{
