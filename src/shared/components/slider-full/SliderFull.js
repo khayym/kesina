@@ -62,6 +62,7 @@ const StyledSwiperWrap = styled.div`
     .bigSliderImage{
         width:100%;
         height:1110px;
+        /* ---- */
         img{
             object-fit: cover;
             object-position:top !important;
