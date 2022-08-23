@@ -41,15 +41,23 @@ export const Wrap = styled.footer`
     border-radius: 0px 500px 0px 0px;
     min-height: 394px;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 
     .fo0terTexts{
-        border:1px solid #000;
+        border:1px solid #e40404;
         color:#000;
         display: flex;
         align-items: center;
-        gap:12.125rem;
+        /* gap:12.125rem; */
+        width: 50%;
+        justify-content: space-between;
+
+        @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+            width: 80%;
+            flex-direction: column;
+        }
 
         h3{
             font-family: 'Philosopher';
@@ -80,8 +88,16 @@ export const Wrap = styled.footer`
         a{
             cursor:pointer;
         }
+
+        
     }
 
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.lg}){
+        flex-direction: column;
+        align-items:flex-start;
+        padding-left:24px;
+    }
   
 `
 
