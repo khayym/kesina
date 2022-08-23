@@ -1,4 +1,6 @@
-import { Grid } from '@mantine/core'
+import { Grid, Accordion } from '@mantine/core'
+import Image from 'next/image'
+import { TextAccordion } from '../../shared/components/accordion/Accordion'
 import { Banner } from '../../shared/components/banner/Banner'
 import { CutomButton } from '../../shared/components/button/Button'
 import { Lent } from '../../shared/components/imageLent/Lent'
@@ -6,7 +8,8 @@ import { LinedText } from '../../shared/components/lindedText/LinedText'
 import { SliderFull } from '../../shared/components/slider-full/SliderFull'
 import { Slider } from '../../shared/components/slider/Slider'
 import { TextViaSpoiler } from '../../shared/components/text/Text'
-import { MainPageContainer, Section3, Section4 } from './Home.Styled'
+import { WpSlider } from '../../shared/components/wp-slider/WpSlider'
+import { MainPageContainer, Section3, Section4, Section5, Section6, Section7 } from './Home.Styled'
 
 
 export const HomePage = () => (
@@ -161,6 +164,18 @@ export const HomePage = () => (
         <Section4>
             <SliderFull />
         </Section4>
+        <Section5 />
+
+        <Section6>
+            <LinedText text='вопросы и ответы' className="sectionThreeLinedText" />
+            <TextAccordion />
+        </Section6>
+
+        <Section7>
+            <LinedText text='отзывы' className="sectionThreeLinedText" />
+            <WpSlider />
+        </Section7>
+
     </MainPageContainer>
 )
 

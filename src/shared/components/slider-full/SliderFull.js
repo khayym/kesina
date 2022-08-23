@@ -84,25 +84,18 @@ const StyledSwiperWrap = styled.div`
     }
 
     .swiper-pagination-bullet-active{
-        width: 15px;
-        height:15px;
+        width: 12px;
+        height:12px;
         background-color:#fff;
         
     }
 
     .swiper-pagination-bullet{
-        border: 1px solid #fff;
-        width: 15px;
-        height:15px;
+        border: 2px solid #fff;
+        width: 12px;
+        height:12px;
 
     }
-
-    /* .swiper-pagination-horizontal{
-        border: 1px solid #fff;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    } */
     .swiper {
     padding-bottom: 70px !important;
     

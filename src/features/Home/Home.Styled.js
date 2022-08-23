@@ -167,3 +167,37 @@ height:1200px;
 }
 /* height:100%; */
 `
+
+
+export const Section5 = styled(Section3)`
+    background:url(/icons/nodes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 805.37px;
+    margin-bottom:6rem;
+
+    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}) {
+        background:url(/icons/nodes-tablet.svg);
+        background-repeat: no-repeat;
+          background-size: contain;
+         background-position: center;
+    }
+    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.xs}) {
+        background:url(/icons/nodes-mobile.svg);
+        background-repeat: no-repeat;
+          background-size: contain;
+         background-position: center;
+    }
+
+`
+
+export const Section6 = styled(Section3)`
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+    margin-bottom:4rem;
+`
+
+export const Section7 = styled(Section3)`
+`
