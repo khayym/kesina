@@ -23,6 +23,7 @@ export const Banner = ({ reverse, title, url, label, price, required, buttons })
 
 export const BannerWraper = styled(Grid)`
     /* background-color:#ffffff48; */
+    background: rgba(255, 253, 251, 0.02);
     border: 1px solid #ffffff;
     border-radius: 0px 30px 30px 0px;
     /* height: 548px; */

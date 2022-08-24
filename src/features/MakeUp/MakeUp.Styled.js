@@ -4,24 +4,30 @@ export const MakeUpWrap = styled.div`
     border: 1px solid #fff;
 `
 
-export const SectionOne = styled.section`
-    border: 1px solid red;
-    height:52rem;
-    width:100%;
-    position: relative;
-    margin-top:100px;
-    display:flex;
-    /* margin: 61px 120px 0 120px; */
 
-    .makeUpSecionDivOne{
-        width: 840px;
-        height: 592px;
-        border: 1px solid yellow;
-        position: absolute;
-        right: 0;
+export const Container = styled.div`
+    margin: 0 120px;
+
+    section:nth-child(1){
+        h2{
+            line-height:4rem;
+        }
+
+
+       
     }
 
-    .hClass{
-        border: 1px solid #fff;
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.lg}){
+        margin: 0 24px;
     }
+
+    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+        section:first-child {
+            h2{
+                font-size:32px;
+                line-height:2.2rem;
+            }
+        }
+    }
+
 `

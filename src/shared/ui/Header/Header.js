@@ -15,7 +15,7 @@ export const Header = () => {
                 <Link href="/your-choise">выбирай себя</Link>
             </div>
             <div>
-                <CustomMenu />
+                <CustomMenu pathname={pathname} />
             </div>
             <a to='javascript:void(0)'
                 onClick={() => window.location = 'mailto:kseniashaportv@mail.ru'}>
