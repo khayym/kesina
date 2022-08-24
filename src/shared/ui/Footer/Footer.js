@@ -4,8 +4,6 @@ import Link from 'next/link'
 import { Wrap } from './Footer.Styled'
 
 export const Footer = ({ viewport }) => {
-
-
     return (
         <Wrap>
             <div className='div'>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Banner } from '../../shared/components/banner/Banner'
 import { CutomButton } from '../../shared/components/button/Button'
 import { LinedText } from '../../shared/components/lindedText/LinedText'
@@ -14,16 +14,20 @@ import { Slider } from '../../shared/components/slider/Slider'
 
 
 export const StilPage = () => {
+    const viewport = useRef(null);
+
+    const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
     return (
-        <Wrap>
+        <Wrap ref={viewport}>
             <PageHead
+                handleScroll={scrollToBottom}
                 url={['/images/head-images/stil-sm.png', '/images/head-images/stil-md.png', '/images/head-images/stil-xl.png']}
                 title='стиль и шопинг'
                 body="Текст об особенностях и принципах обучения у Ксении."
             />
 
             <Container>
-                <LinedText text='создание имиджа' size={60} />
+                <LinedText text='создание имиджа”' size={60} />
                 <Banner
                     url={'/images/stil/2.png'}
                     // url2={'/images/stil/2.1.png'}

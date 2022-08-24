@@ -2,15 +2,12 @@ import Image from 'next/image'
 import styled from 'styled-components'
 
 
-const Nodes = ({ nodes: { childs, nodeIcon } }) => {
+const Nodes = ({ nodes: { childs, nodeIcon }, thin }) => {
     return (
-        <NodeWrapper>
+        <NodeWrapper thin={thin}>
             {childs.map((node, i) => (
 
                 <div key={i} className='nodeWrapContainer' id={`${childs?.length > 1 ? 'once' : 'notOnce'}`}>
-                    {
-                        console.log(nodeIcon)
-                    }
                     {nodeIcon === 'tic' && <Image src="/icons/clik.svg" alt='clik-icon' className='iconImages' height={11} width={15} />}
                     {nodeIcon === 'dots' && <Image src="/icons/dots.svg" alt='clik-icon' className='iconImages' height={7} width={7} />}
                     <p>{node}</p>
@@ -20,7 +17,7 @@ const Nodes = ({ nodes: { childs, nodeIcon } }) => {
     )
 }
 
-export const BannerText = ({ title, required, label, price, buttons, reverse }) => {
+export const BannerText = ({ title, required, label, price, buttons, reverse, thin }) => {
     return (
         <BannerTextStyled reverse>
             {title}
@@ -31,7 +28,7 @@ export const BannerText = ({ title, required, label, price, buttons, reverse }) 
                     return (
                         <BannerLable key={index} direction={nodes.nodeStyle}>
                             <p className='labelTitle'>{labelTitle}</p>
-                            <Nodes nodes={nodes} />
+                            <Nodes nodes={nodes} thin={thin} />
                         </BannerLable>
                     )
                 })

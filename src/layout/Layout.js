@@ -4,7 +4,6 @@ import { Header } from '../shared/ui/Header/Header'
 
 export const Layout = ({ children }) => {
     const viewport = useRef(null);
-
     const scrollToTop = (viewport) => {
         window.scrollTo({
             top: 0,
@@ -18,6 +17,6 @@ export const Layout = ({ children }) => {
             <Header />
             {children}
             <Footer viewport={scrollToTop} />
-        </div>
-    )
+        </div>)
+
 }

@@ -3,13 +3,14 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { BannerText } from './banner-text'
 
-export const Banner = ({ reverse, title, url, label, price, required, buttons, url2 }) => {
+export const Banner = ({ reverse, title, url, label, price, required, buttons, url2, top, thin }) => {
     return (
-        <BannerWraper columns={24} reverse={reverse?.toString()} url={url} url2={url2}>
+        <BannerWraper columns={24} reverse={reverse?.toString()} url={url} url2={url2} top={top} >
             <Grid.Col sm={11} xs={24} className='bannerDiv1'>
             </Grid.Col>
             <Grid.Col sm={13} className='bannerDiv2'>
                 <BannerText
+                    thin
                     title={title}
                     required={required}
                     price={price}
@@ -47,7 +48,7 @@ export const BannerWraper = styled(Grid)`
         border: 2px solid #fff;
         min-height:380px;
         position: relative;
-        background-position: center;
+        background-position: ${props => props.top ? 'top' : 'center'};
         background-size: cover;
         background-image: ${props => `url(${props.url})`};
         background-clip: content-box;
