@@ -16,9 +16,10 @@ export const HeaderContainer = styled.header`
 
     a {
         cursor: pointer;
-        color: #000;
+        color: ${({ path }) => path !== '/' ? '#fff' : '#000'};
         font-weight:500;
         transition: all 0.3s ease-in-out;
+
         :hover{
             color:#FF2E2E;
             

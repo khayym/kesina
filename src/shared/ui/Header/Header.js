@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'next/link';
 import { HeaderContainer } from './Header.Styled';
 import { CustomMenu } from '../../components/menu/Menu';
-
+import { useRouter } from 'next/router'
 
 
 export const Header = () => {
+    const { pathname } = useRouter();
     return (
-        <HeaderContainer>
+        <HeaderContainer path={pathname}>
             <div className='linksGroup'>
                 <Link href="/makeup-hair">Make-up & Hair</Link>
                 <Link href="/stil">Стиль</Link>
