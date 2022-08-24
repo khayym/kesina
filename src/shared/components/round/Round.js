@@ -29,7 +29,6 @@ const Text = ({ children }) => {
 }
 
 const Wrap = styled.div`
-    border: 1px solid #fff;
     display:flex;
     align-items: center;
     justify-content:space-between;

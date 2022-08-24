@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const MakeUpWrap = styled.div`
-    border: 1px solid #fff;
+
+
 `
 
 
@@ -28,6 +29,13 @@ export const Container = styled.div`
                 line-height:2.2rem;
             }
         }
+    }
+
+
+    section:nth-child(3){
+        width:100%;
+        position:relative;
+        height:800px;
     }
 
 `

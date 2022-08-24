@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Wrap } from './Footer.Styled'
 
-export const Footer = () => {
+export const Footer = ({ viewport }) => {
+
+
     return (
         <Wrap>
             <div className='div'>
@@ -40,7 +42,7 @@ export const Footer = () => {
                     </div>
 
 
-                    <div id='icon'>
+                    <div id='icon' onClick={() => viewport()}>
                         <Image src='/icons/upArrow.svg' alt='Arrow icon up' width={34} height={37} />
                     </div>
                 </section>

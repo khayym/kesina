@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { Container, MakeUpWrap } from './MakeUp.Styled'
 import { PageHead } from '../../shared/ui/head/Head';
 import { LinedText } from '../../shared/components/lindedText/LinedText';
@@ -7,11 +7,19 @@ import { SimpleGrid } from '@mantine/core';
 import { Banner3 } from '../../shared/components/banner-3/Banner3';
 import { Round } from '../../shared/components/round/Round';
 import { WpSlider } from '../../shared/components/wp-slider/WpSlider'
+import Image from 'next/image';
+import { Full } from '../../shared/components/full';
+import { Galery } from '../../shared/components/galery/Galery';
 
 export const MakeUpHairPage = () => {
+    const viewport = useRef(null);
+
+    const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
+
     return (
-        <MakeUpWrap>
+        <MakeUpWrap ref={viewport}>
             <PageHead
+                handleScroll={scrollToBottom}
                 url={['/images/head-images/makeup-sm.png', '/images/head-images/makeup-md.png', '/images/head-images/makeup-xl.png']}
                 title='обучение MAKEUP & HAIR'
                 body={'Одно или несколько предложений об обучении.'}
@@ -149,8 +157,18 @@ export const MakeUpHairPage = () => {
                     <LinedText text='отзывы' size={60} />
                     <WpSlider />
                 </section>
-                <section></section>
-                <section></section>
+            </Container>
+            <Full />
+            <Container>
+                <LinedText text='Галерея' size={60} />
+                <Galery imgs={[
+                    '/cards/makeup/1.png',
+                    '/cards/makeup/2.png',
+                    '/cards/makeup/3.png',
+                    '/cards/makeup/4.png',
+                    '/cards/makeup/5.png',
+                    '/cards/makeup/6.png',
+                ]} />
             </Container>
         </MakeUpWrap>
     )
