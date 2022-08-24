@@ -15,6 +15,10 @@ export const Lined = styled.div`
         text-transform: uppercase;
         color: #FFFDFB;
         text-align: center;
+
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+            font-size:22px;
+        }
     }
 
     div{

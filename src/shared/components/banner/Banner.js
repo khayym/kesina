@@ -3,9 +3,9 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import { BannerText } from './banner-text'
 
-export const Banner = ({ reverse, title, url, label, price, required, buttons }) => {
+export const Banner = ({ reverse, title, url, label, price, required, buttons, url2 }) => {
     return (
-        <BannerWraper columns={24} reverse={reverse?.toString()} url={url}>
+        <BannerWraper columns={24} reverse={reverse?.toString()} url={url} url2={url2}>
             <Grid.Col sm={11} xs={24} className='bannerDiv1'>
             </Grid.Col>
             <Grid.Col sm={13} className='bannerDiv2'>
@@ -45,8 +45,7 @@ export const BannerWraper = styled(Grid)`
     .bannerDiv1 {
     
         border: 2px solid #fff;
-       
-        min-height:230px;
+        min-height:380px;
         position: relative;
         background-position: center;
         background-size: cover;
@@ -70,7 +69,7 @@ export const BannerWraper = styled(Grid)`
     @media (max-width: 768px) {
         border: 0px solid #fff;
         ${props => props.reverse ? 'padding-left: 45px' : 'padding-right: 45px'};
-        
+        background-image:  ${props => props.url2 && `url(${props.url2})`};
     }
 
     }

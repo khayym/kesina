@@ -5,8 +5,10 @@ import { Scrollbar } from "swiper";
 import { ImageCard } from '../card/Card';
 import { SwipperWrapper } from './Slider.Styled';
 import { sliderBreakpoints } from './constants';
+import { useRouter } from 'next/router';
 
 export const Slider = () => {
+    const { pathname } = useRouter();
 
     return (
         <SwipperWrapper>
@@ -19,13 +21,13 @@ export const Slider = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <ImageCard src={'/images/slider/slider1.png'} />
+                    <ImageCard src={pathname === '/' ? '/images/slider/slider1.png' : '/cards/still2/1.png'} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ImageCard src={'/images/slider/slider2.png'} />
+                    <ImageCard src={pathname === '/' ? '/images/slider/slider2.png' : '/cards/still2/2.png'} />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <ImageCard src={'/images/slider/slider3.png'} />
+                    <ImageCard src={pathname === '/' ? '/images/slider/slider3.png' : '/cards/still2/3.png'} />
                 </SwiperSlide>
             </Swiper>
         </SwipperWrapper>

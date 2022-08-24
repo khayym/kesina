@@ -6,8 +6,13 @@ const Nodes = ({ nodes: { childs, nodeIcon } }) => {
     return (
         <NodeWrapper>
             {childs.map((node, i) => (
+
                 <div key={i} className='nodeWrapContainer' id={`${childs?.length > 1 ? 'once' : 'notOnce'}`}>
-                    {nodeIcon && <Image src="/icons/clik.svg" alt='clik-icon' className='iconImages' height={11} width={15} />}
+                    {
+                        console.log(nodeIcon)
+                    }
+                    {nodeIcon === 'tic' && <Image src="/icons/clik.svg" alt='clik-icon' className='iconImages' height={11} width={15} />}
+                    {nodeIcon === 'dots' && <Image src="/icons/dots.svg" alt='clik-icon' className='iconImages' height={7} width={7} />}
                     <p>{node}</p>
                 </div>
             ))}
@@ -50,6 +55,7 @@ const BannerTextStyled = styled.div`
     flex-direction: column;
     gap:22px;
     width: 100%;
+    padding-top:1rem;
 
     h3{
         font-family: 'Playfair Display';
