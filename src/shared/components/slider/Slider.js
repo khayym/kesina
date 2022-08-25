@@ -11,7 +11,7 @@ export const Slider = ({ links }) => {
     const { push, pathname } = useRouter();
 
     return (
-        <SwipperWrapper>
+        <SwipperWrapper onClick={() => fc()}>
             <Swiper
                 scrollbar={{
                     horizontalClass: 'swiper-scrollbar-horizontal',
