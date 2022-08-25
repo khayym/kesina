@@ -11,7 +11,7 @@ export const Footer = ({ viewport }) => {
                     <h2>Ksenia Shapor</h2>
                     <div>
                         <p className='outhor'>2022 © Все права защищены</p>
-                        <a href="https://www.linkedin.com/in/khayyam-karimov-2b1873125/" target="blank">| BUILD BY @KHAYYM</a>
+                        {/* <a href="https://www.linkedin.com/in/khayyam-karimov-2b1873125/" target="blank">| BUILD BY @KHAYYM</a> */}
                     </div>
                 </section>
 
@@ -35,7 +35,7 @@ export const Footer = ({ viewport }) => {
                         </a>
                         <div>
                             <p className='outhor'>2022 © Все права защищены</p>
-                            <a href="https://www.linkedin.com/in/khayyam-karimov-2b1873125/" target="blank">| BUILD BY @KHAYYM</a>
+                            {/* <a href="https://www.linkedin.com/in/khayyam-karimov-2b1873125/" target="blank">| BUILD BY @KHAYYM</a> */}
                         </div>
                     </div>
 
