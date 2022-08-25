@@ -8,7 +8,9 @@ position: relative;
 width:100%;
 height:100%;
 max-height:320px;
-
+:hover{
+    cursor: pointer;
+}
 img{
     border-radius: 30px;
 }

@@ -1,10 +1,12 @@
-import Image from 'next/image'
 import React from 'react'
 import styled from 'styled-components'
-import { BackgroundImage, Center, Text, Box } from '@mantine/core';
+import { BackgroundImage, Center, Box } from '@mantine/core';
 import { CutomButton } from '../button/Button';
+import { useRouter } from 'next/router';
+import { goToTelegram } from '../../../utils/nav';
 
 export const Full = () => {
+    const { push } = useRouter();
     return (
         <Box style={{ height: '800px', margin: '7rem 0' }}>
             <BackgroundImage
@@ -14,7 +16,7 @@ export const Full = () => {
                 <FullContainer p="md" style={{ alignItems: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     <h2>Обучение в подарок</h2>
                     <h6>Свяжитесь со мной лично и закажите подарочной сертификат подруге, сестре или коллеге в подарок на любое обучение или услугу.</h6>
-                    <CutomButton>Хочу заказать!</CutomButton>
+                    <CutomButton func={() => goToTelegram(push)}>Хочу заказать!</CutomButton>
                 </FullContainer>
             </BackgroundImage>
         </Box>

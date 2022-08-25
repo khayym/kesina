@@ -1,0 +1,1 @@
+export const goToTelegram = (navigation) => navigation('https://t.me/ksshapor');

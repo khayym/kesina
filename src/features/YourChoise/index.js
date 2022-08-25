@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router';
 import React, { useRef } from 'react'
 import { Banner } from '../../shared/components/banner/Banner';
 import { CutomButton } from '../../shared/components/button/Button';
@@ -6,12 +7,13 @@ import { LinedText } from '../../shared/components/lindedText/LinedText';
 import { Round } from '../../shared/components/round/Round';
 import { WpSlider } from '../../shared/components/wp-slider/WpSlider';
 import { PageHead } from '../../shared/ui/head/Head'
+import { goToTelegram } from '../../utils/nav';
 import { Container, Wrap } from './YourChoise.Styled'
 
 export const YourChoisePage = () => {
     const viewport = useRef(null);
     const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
-
+    const { push } = useRouter();
     return (
         <Wrap ref={viewport}>
             <PageHead
@@ -29,7 +31,7 @@ export const YourChoisePage = () => {
                     thin
                     title={<h3>Выбирай себя</h3>}
                     price={<p>Стоимость: <span>29000 руб</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб</span>)</p>}
-                    buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1}>Хочу записаться!</CutomButton>]}
+                    buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {
                             labelTitle: 'Если Вы хотите:',

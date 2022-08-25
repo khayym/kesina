@@ -2,8 +2,12 @@ import Image from 'next/image'
 import React from 'react'
 import { ColImage, ColText, Div, ListItem, Lists, Price, Wrap } from './Banner2.Styled'
 import { CutomButton } from '../button/Button'
+import { useRouter } from 'next/router'
+import { goToTelegram } from '../../../utils/nav'
 
 export const Banner2 = ({ number, url, title, lists, price }) => {
+    const { push } = useRouter();
+
     return (
         <Wrap>
             <ColImage className='col1'>
@@ -41,7 +45,7 @@ export const Banner2 = ({ number, url, title, lists, price }) => {
                     }
                 </div>
                 <div className="priceBtn">
-                    <CutomButton>Ознакомиться</CutomButton>
+                    <CutomButton func={() => goToTelegram(push)}>Ознакомиться</CutomButton>
                 </div>
             </ColText>
         </Wrap>

@@ -12,7 +12,7 @@ export const Header = () => {
             <div className='linksGroup'>
                 <Link href="/makeup-hair">Make-up & Hair</Link>
                 <Link href="/stil">Стиль</Link>
-                <Link href="/your-choise">выбирай себя</Link>
+                <Link href="/your-choise">Bыбирай себя</Link>
             </div>
             <div>
                 <CustomMenu pathname={pathname} />

@@ -33,24 +33,52 @@ export const brakPoints = {
 }
 
 
-export const sliders = [
-    '/images/wp-slider/wp-1.png',
-    '/images/wp-slider/wp-2.png',
-    '/images/wp-slider/wp-3.png',
-    '/images/wp-slider/wp-4.png',
-    '/images/wp-slider/wp-5.png',
-    '/images/wp-slider/wp-6.png',
-    '/images/wp-slider/wp-7.png',
-    '/images/wp-slider/wp-8.png',
-    '/images/wp-slider/wp-9.png',
-    '/images/wp-slider/wp-10.png',
-    '/images/wp-slider/wp-11.png',
-    '/images/wp-slider/wp-12.png',
-    '/images/wp-slider/wp-13.png',
-    '/images/wp-slider/wp-14.png',
-    '/images/wp-slider/wp-15.png',
-    '/images/wp-slider/wp-16.png',
-    '/images/wp-slider/wp-16.png',
-    '/images/wp-slider/wp-17.png',
-    '/images/wp-slider/wp-18.png',
-]
+
+
+export const sliders = {
+    '/': [
+        '/images/wp-slider/wp-1.png',
+        '/images/wp-slider/wp-2.png',
+        '/images/wp-slider/wp-3.png',
+        '/images/wp-slider/wp-4.png',
+        '/images/wp-slider/wp-5.png',
+        '/images/wp-slider/wp-6.png',
+        '/images/wp-slider/wp-7.png',
+        '/images/wp-slider/wp-8.png',
+        '/images/wp-slider/wp-9.png',
+        '/images/wp-slider/wp-10.png',
+        '/images/wp-slider/wp-11.png',
+        '/images/wp-slider/wp-12.png',
+        '/images/wp-slider/wp-13.png',
+        '/images/wp-slider/wp-14.png',
+        '/images/wp-slider/wp-15.png',
+        '/images/wp-slider/wp-16.png',
+        '/images/wp-slider/wp-16.png',
+        '/images/wp-slider/wp-17.png',
+        '/images/wp-slider/wp-18.png',
+    ],
+    '/makeup-hair': [
+        '/images/wp-slider/wp-1.png',
+        '/images/wp-slider/wp-2.png',
+        '/images/wp-slider/wp-3.png',
+        '/images/wp-slider/wp-4.png',
+        '/images/wp-slider/wp-5.png',
+        '/images/wp-slider/wp-7.png',
+        '/images/wp-slider/wp-8.png',
+        '/images/wp-slider/wp-10.png',
+        '/images/wp-slider/wp-11.png',
+        '/images/wp-slider/wp-16.png',
+        '/images/wp-slider/wp-18.png',
+
+    ],
+    '/stil': [
+        '/images/wp-slider/wp-15.png',
+        '/images/wp-slider/wp-13.png',
+        '/images/wp-slider/wp-14.png',
+    ],
+    '/your-choise': [
+        '/images/wp-slider/wp-17.png',
+        '/images/wp-slider/wp-12.png',
+        '/images/wp-slider/wp-9.png',
+    ]
+}

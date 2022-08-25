@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: kseniashapor.ru/sitemap.xml
+Sitemap: kseniashapor.com/sitemap.xml

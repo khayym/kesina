@@ -5,17 +5,19 @@ import { LinedText } from '../../shared/components/lindedText/LinedText'
 import { PageHead } from '../../shared/ui/head/Head'
 import { Container, Wrap } from './Stil.Styled'
 import { Banner3 } from '../../shared/components/banner-3/Banner3'
-import { SimpleGrid, Image } from '@mantine/core';
+import { Image } from '@mantine/core';
 import { Round } from '../../shared/components/round/Round'
 import { WpSlider } from '../../shared/components/wp-slider/WpSlider'
 import { Full } from '../../shared/components/full'
 import { Galery } from '../../shared/components/galery/Galery'
 import { Slider } from '../../shared/components/slider/Slider'
+import { useRouter } from 'next/router'
+import { goToTelegram } from '../../utils/nav'
 
 
 export const StilPage = () => {
     const viewport = useRef(null);
-
+    const { push } = useRouter();
     const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
     return (
         <Wrap ref={viewport}>
@@ -33,7 +35,7 @@ export const StilPage = () => {
                     // url2={'/images/stil/2.1.png'}
                     title={<h3>стиль</h3>}
                     price={<p><span>29000 руб</span></p>}
-                    buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1}>Хочу записаться!</CutomButton>]}
+                    buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {
                             labelTitle: 'Если Вы хотите:',
@@ -79,7 +81,7 @@ export const StilPage = () => {
                     url2={'/images/stil/3.1.png'}
                     title={<h3>«Я-стилист»</h3>}
                     price={<p><span>35000 руб</span></p>}
-                    buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1}>Хочу записаться!</CutomButton>]}
+                    buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {
                             labelTitle: '3 теории:',
@@ -153,8 +155,14 @@ export const StilPage = () => {
                     '/cards/still/6.png',
                 ]} />
                 <LinedText text='Больше о стиле' size={60} />
-                <Slider />
+                <Slider
+                    links={['https://www.youtube.com/watch?v=9AB4zFGHx_k', 'https://www.youtube.com/watch?v=fHh5GiZ2LQo', 'https://www.youtube.com/watch?v=lkM2E7M6P4Q']}
+                />
+
             </Container>
+            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
+                <CutomButton func={() => push('https://www.youtube.com/c/makeksenia')}>Перейти на мой канал</CutomButton>
+            </div>
         </Wrap >
     )
 }

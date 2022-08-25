@@ -4,10 +4,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 import { SwiperCard, WpSwiperWrap } from './WpSlider.Styled';
 import { brakPoints, sliders } from './constants';
+import { useRouter } from 'next/router';
 
 
 
 export const WpSlider = () => {
+    const { pathname } = useRouter();
     return (
         <WpSwiperWrap>
             <Swiper
@@ -26,7 +28,7 @@ export const WpSlider = () => {
                 className="mySwiperWp"
             >
                 {
-                    sliders.map((slider, index) => (
+                    sliders[pathname].map((slider, index) => (
                         <SwiperSlide key={index}>
                             <SwiperCard url={slider}>
                                 <div className='wpSwipperInsdeDiv' />

@@ -2,8 +2,9 @@ import styled from "styled-components"
 import { List } from '@mantine/core';
 import { useRouter } from 'next/router'
 import { CutomButton } from "../button/Button";
+import { goToTelegram } from "../../../utils/nav";
 export const Banner3 = () => {
-    const { pathname } = useRouter();
+    const { pathname, push } = useRouter();
 
     return (
         <Wrap>
@@ -27,7 +28,7 @@ export const Banner3 = () => {
                                 <h6>8500 руб</h6>
                             </div>
                         </Lists>
-                        <CutomButton>Хочу записаться!</CutomButton>
+                        <CutomButton func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>
                     </Two>
                 ) : (
                     <Two id='two'>
@@ -41,7 +42,7 @@ export const Banner3 = () => {
                                 <h6>15000 руб</h6>
                             </div>
                         </Lists>
-                        <CutomButton>Хочу записаться!</CutomButton>
+                        <CutomButton func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>
                     </Two>
                 )
             }
