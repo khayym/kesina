@@ -7,11 +7,10 @@ import { SwipperWrapper } from './Slider.Styled';
 import { sliderBreakpoints } from './constants';
 import { useRouter } from 'next/router';
 
-export const Slider = () => {
+export const Slider = ({ fc }) => {
     const { pathname } = useRouter();
-
     return (
-        <SwipperWrapper>
+        <SwipperWrapper onClick={() => fc()}>
             <Swiper
                 scrollbar={{
                     horizontalClass: 'swiper-scrollbar-horizontal',

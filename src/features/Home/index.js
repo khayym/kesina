@@ -13,16 +13,12 @@ import { WpSlider } from '../../shared/components/wp-slider/WpSlider'
 import { MainPageContainer, Section3, Section4, Section5, Section6, Section7 } from './Home.Styled'
 
 
-export const HomePage = () => {
+export const HomePage = ({ navigation }) => {
 
     const sec3ref = useRef(null)
     const scrollToBottom = () => window.scrollTo({ top: sec3ref.current.scrollHeight, behavior: 'smooth' });
 
-    // const scrolling = (ref) => {
-    //     // window.scrollTo(ref.top, ref.bottom)
-    //     console.log(sec3ref)
-    //     // ref.current.scrollIntoView()
-    // }
+
     return (
         <MainPageContainer>
             <section>
@@ -64,10 +60,10 @@ export const HomePage = () => {
                         </TextViaSpoiler>
                     </Grid.Col>
                 </Grid>
-                <Slider />
+                <Slider fc={sddd} />
             </section>
             <Section3 >
-                <LinedText text='услуги и обучения' className="sectionThreeLinedText" />
+                <LinedText text='услуги и обучения' className="sectionThreeLinedText" ref={sec3ref} />
                 <Banner
                     url={'/images/banner-home/banner-home-1.png'}
                     title={<h3>Консультация на любую тему</h3>}
