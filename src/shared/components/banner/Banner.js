@@ -5,7 +5,7 @@ import { BannerText } from './banner-text'
 
 export const Banner = ({ reverse, title, url, label, price, required, buttons, url2, top, thin }) => {
     return (
-        <BannerWraper columns={24} reverse={reverse?.toString()} url={url} url2={url2} top={top} >
+        <BannerWraper columns={24} reverse={reverse?.toString()} url={url} url2={url2} top={top}>
             <Grid.Col sm={11} xs={24} className='bannerDiv1'>
             </Grid.Col>
             <Grid.Col sm={13} className='bannerDiv2'>

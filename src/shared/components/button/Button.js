@@ -11,8 +11,8 @@
 import React from 'react'
 import { StyledButton } from './Button.Styled'
 
-export const CutomButton = ({ children, variant = 'primary', sty }) => {
+export const CutomButton = ({ children, variant = 'primary', sty, onClick }) => {
     return (
-        <StyledButton style={sty} variant={variant}>{children}</StyledButton>
+        <StyledButton style={sty} variant={variant} onClick={() => onClick()}>{children}</StyledButton>
     )
 }
