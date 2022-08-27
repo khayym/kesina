@@ -1,5 +1,6 @@
 import { Grid } from '@mantine/core'
 import { useRouter } from 'next/router'
+import { useRef } from 'react'
 import { TextAccordion } from '../../shared/components/accordion/Accordion'
 import { Banner } from '../../shared/components/banner/Banner'
 import { CutomButton } from '../../shared/components/button/Button'
@@ -15,13 +16,15 @@ import { MainPageContainer, Section3, Section4, Section5, Section6, Section7 } f
 
 export const HomePage = (props) => {
     const { push } = useRouter();
+    const reff = useRef(null);
+    const scrollToBottom = (reff) => reff.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     return (
         <MainPageContainer>
             <section>
                 <div>
                     <h1>Ksenia Shapor</h1>
                     <h3>Школа макияжа и имиджа</h3>
-                    <CutomButton>Ознакомиться</CutomButton>
+                    <CutomButton func={() => scrollToBottom(reff)}>Ознакомиться</CutomButton>
                 </div>
             </section>
 
@@ -61,7 +64,7 @@ export const HomePage = (props) => {
                 />
             </section>
             <Section3>
-                <LinedText text='услуги и обучения' className="sectionThreeLinedText" />
+                <LinedText text='услуги и обучения' className="sectionThreeLinedText" reff={reff} />
                 <Banner
                     url={'/images/banner-home/banner-home-1.png'}
                     title={<h3>Консультация на любую тему</h3>}

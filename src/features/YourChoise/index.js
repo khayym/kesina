@@ -11,19 +11,20 @@ import { goToTelegram } from '../../utils/nav';
 import { Container, Wrap } from './YourChoise.Styled'
 
 export const YourChoisePage = () => {
-    const viewport = useRef(null);
-    const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
+    const reff = useRef(null);
+    const scrollToBottom = (reff) => reff.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     const { push } = useRouter();
+
     return (
-        <Wrap ref={viewport}>
+        <Wrap>
             <PageHead
-                handleScroll={scrollToBottom}
+                handleScroll={() => scrollToBottom(reff)}
                 url={['/images/head-images/your-sm.png', '/images/head-images/your-md.png', '/images/head-images/your-xl.png']}
                 title='Выбирай себя'
                 body="Курс по проработке самооценки. Учимся уверенности в себе"
             />
             <Container>
-                <LinedText text='об обучении “Выбирай себя”' size={60} left={false} right={false} />
+                <LinedText text='об обучении “Выбирай себя”' size={60} left={false} right={false} reff={reff} />
                 <Banner
                     url={'/images/your/1.png'}
                     url2={'/images/your/2.png'}

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Grid, List } from "@mantine/core";
+import { Accordion, Grid, List } from "@mantine/core";
 
 
 export const Wrap = styled.div`
@@ -88,6 +88,22 @@ export const ColText = styled.div`
         height: 100%;
     }
 
+    #sec{
+        display: none;
+
+        h3{
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color:#fff !important;
+            margin:15px 0 12px 0;
+            width:100%;
+            display:flex;
+            gap:10px;
+            align-items: center;
+        }
+    }
     .priceBtn{
         display:flex;
         align-items: center;
@@ -110,6 +126,17 @@ export const ColText = styled.div`
         h2{
             font-size:20px;
             text-align:start;
+        }
+    }
+
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+        #first{
+            display:none;
+        }
+
+        #sec{
+            display:block;
         }
     }
   
@@ -175,4 +202,28 @@ export const Price = styled.div`
         font-style:normal;
         margin-right:5px;
     }
+`
+
+export const AccordionWrap = styled(Accordion)`
+.mantine-Accordion-item{
+    border-bottom:0px solid;
+}
+    .mantine-Accordion-control, .mantine-Accordion-content {
+        padding:0;
+        margin:0;
+    }
+
+    .mantine-Accordion-control{
+        :active{
+            background-color:transparent;
+        }
+    }
+    li{
+        margin-top:0px !important;
+    }
+
+    .mantine-Accordion-chevron{
+        display:none;
+    }
+
 `

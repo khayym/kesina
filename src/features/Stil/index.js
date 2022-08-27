@@ -16,20 +16,20 @@ import { goToTelegram } from '../../utils/nav'
 
 
 export const StilPage = () => {
-    const viewport = useRef(null);
+    const reff = useRef(null);
     const { push } = useRouter();
-    const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
+    const scrollToBottom = (reff) => reff.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     return (
-        <Wrap ref={viewport}>
+        <Wrap>
             <PageHead
-                handleScroll={scrollToBottom}
+                handleScroll={() => scrollToBottom(reff)}
                 url={['/images/head-images/stil-sm.png', '/images/head-images/stil-md.png', '/images/head-images/stil-xl.png']}
                 title='стиль и шопинг'
                 body="Текст об особенностях и принципах обучения у Ксении."
             />
 
             <Container>
-                <LinedText text='создание имиджа”' size={60} />
+                <LinedText text='создание имиджа”' size={60} reff={reff} />
                 <Banner
                     url={'/images/stil/2.png'}
                     // url2={'/images/stil/2.1.png'}

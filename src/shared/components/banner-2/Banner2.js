@@ -1,12 +1,14 @@
 import Image from 'next/image'
-import React from 'react'
-import { ColImage, ColText, Div, ListItem, Lists, Price, Wrap } from './Banner2.Styled'
+import React, { useState } from 'react'
+import { AccordionWrap, ColImage, ColText, Div, ListItem, Lists, Price, Wrap } from './Banner2.Styled'
 import { CutomButton } from '../button/Button'
 import { useRouter } from 'next/router'
 import { goToTelegram } from '../../../utils/nav'
+import { Accordion, Spoiler } from '@mantine/core'
 
 export const Banner2 = ({ number, url, title, lists, price }) => {
     const { push } = useRouter();
+    const [ro, setRo] = useState(false);
 
     return (
         <Wrap>
@@ -32,6 +34,35 @@ export const Banner2 = ({ number, url, title, lists, price }) => {
                             </Lists>
                         ))
                     }
+                    {
+                        price.map((price, index) => (
+                            <Price key={index}>
+                                <h5>
+                                    <span id='title'>{price.title}</span>
+                                    {price.price}
+                                </h5>
+                            </Price>
+                        ))
+                    }
+                </div>
+                {/* ----- */}
+                <div id='sec'>
+
+
+                    <Lists>
+                        <h3>{lists[0].name}</h3>
+                        {lists[0].cols.map((col, ind) => <ListItem key={ind}>{col}</ListItem>)}
+                    </Lists>
+                    <AccordionWrap>
+                        <Accordion.Item value="customization">
+                            <Accordion.Control onClick={() => setRo(!ro)}>
+                                <h3>{lists[1].name}
+                                    <Image src={'/icons/ta.svg'} width={14} height={8} alt="customization" style={ro ? { transform: 'rotate(180deg)', transition: 'transform 200ms ease' } : { transform: 'rotate(0deg)', transition: 'transform 200ms ease' }} />
+                                </h3>
+                            </Accordion.Control>
+                            <Accordion.Panel>{lists[1].cols.map((col, ind) => <ListItem key={ind}>{col}</ListItem>)}</Accordion.Panel>
+                        </Accordion.Item>
+                    </AccordionWrap>
 
                     {
                         price.map((price, index) => (
@@ -44,6 +75,7 @@ export const Banner2 = ({ number, url, title, lists, price }) => {
                         ))
                     }
                 </div>
+                {/* ---- */}
                 <div className="priceBtn">
                     <CutomButton func={() => goToTelegram(push)}>Ознакомиться</CutomButton>
                 </div>

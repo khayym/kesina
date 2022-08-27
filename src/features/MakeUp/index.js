@@ -13,13 +13,13 @@ import { Galery } from '../../shared/components/galery/Galery';
 
 export const MakeUpHairPage = () => {
     const viewport = useRef(null);
+    const reff = useRef(null);
 
-    const scrollToBottom = () => window.scrollTo({ top: viewport.current.scrollHeight, behavior: 'smooth' });
-
+    const scrollToBottom = (reff) => reff.current.scrollIntoView({ behavior: 'smooth', block: 'start' })
     return (
         <MakeUpWrap ref={viewport}>
             <PageHead
-                handleScroll={scrollToBottom}
+                handleScroll={() => scrollToBottom(reff)}
                 url={['/images/head-images/makeup-sm.png', '/images/head-images/makeup-md.png', '/images/head-images/makeup-xl.png']}
                 title='обучение MAKEUP & HAIR'
                 body={'Одно или несколько предложений об обучении.'}
@@ -27,7 +27,7 @@ export const MakeUpHairPage = () => {
 
             <Container>
                 <section>
-                    <LinedText text='варианты обучения makeup&HAIR' left={false} right={false} size={60} />
+                    <LinedText text='варианты обучения makeup&HAIR' left={false} right={false} size={60} reff={reff} />
                     <SimpleGrid
                         cols={3}
                         spacing="lg"
