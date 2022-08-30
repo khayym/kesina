@@ -23,7 +23,7 @@ export const Footer = ({ viewport }) => {
                             <Link href="/"><a>Главная</a></Link>
                             <Link href="/makeup-hair"><a>Make-up & Hair</a></Link>
                             <Link href="/stil"><a>Стиль</a></Link>
-                            <Link href="/your-choise"><a>выбирай себя</a></Link>
+                            <Link href="/your-choise"><a>Bыбирай себя</a></Link>
                         </div>
                     </div>
 

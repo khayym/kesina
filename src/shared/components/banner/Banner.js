@@ -53,7 +53,7 @@ export const BannerWraper = styled(Grid)`
         background-image: ${props => `url(${props.url})`};
         background-clip: content-box;
         background-repeat: no-repeat;
-       
+     
         ${props => props.reverse ? css`
                 padding:0 0 0 20px;
                 border-top-left-radius: 20rem !important;
@@ -71,6 +71,7 @@ export const BannerWraper = styled(Grid)`
         border: 0px solid #fff;
         ${props => props.reverse ? 'padding-left: 45px' : 'padding-right: 45px'};
         background-image:  ${props => props.url2 && `url(${props.url2})`};
+        max-width:90%;
     }
 
     }
@@ -78,6 +79,7 @@ export const BannerWraper = styled(Grid)`
     .bannerDiv2 {
         padding:0 60px;
         display:flex;
+        
         align-items: center;
         justify-content: center;
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {

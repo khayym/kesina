@@ -11,8 +11,8 @@ export const MainPageContainer = styled.main`
         display: flex;
         align-items: center;
         background-size: cover;
-
-        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.tablet}) {
+        margin-bottom:2rem;
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {
             background-image:url(/images/main2.webp);
             /* height:664px; */
             /* height:100%; */
@@ -45,7 +45,7 @@ export const MainPageContainer = styled.main`
                 text-transform: uppercase;
                 text-shadow: 7px 1px 30px rgba(255, 255, 255, 0.25);
 
-                @media(max-width:${({ theme: { breakPoints } }) => breakPoints.tablet}) {
+                @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {
                     color: #fff;
                 }
 
@@ -62,7 +62,7 @@ export const MainPageContainer = styled.main`
                 font-size: 24px;
                 color: #000000;
                 margin-bottom:55px;
-                @media(max-width:${({ theme: { breakPoints } }) => breakPoints.tablet}) {
+                @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {
                     color: #fff;
                 }
 
@@ -129,7 +129,8 @@ export const MainPageContainer = styled.main`
         }
 
         .sectionOneLinedText{
-            margin-bottom:50px;
+            /* margin-bottom:50px; */
+            margin:0 24px 50px 24px;
             @media(min-width:${({ theme: { breakPoints } }) => breakPoints.lg}) { display: none;}
         }    
     }
@@ -203,6 +204,7 @@ export const Section6 = styled(Section3)`
     display: flex;
     flex-direction: column;
     gap:1rem;
+    margin-top:3.5rem;
     margin-bottom:4rem;
 `
 

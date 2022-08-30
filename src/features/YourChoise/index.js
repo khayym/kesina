@@ -19,7 +19,7 @@ export const YourChoisePage = () => {
         <Wrap>
             <PageHead
                 handleScroll={() => scrollToBottom(reff)}
-                url={['/images/head-images/your-sm.webp', '/images/head-images/your-md.webp', '/images/head-images/your-xl.webp']}
+                url={['/images/head-images/your-xl.webp', '/images/head-images/your-xl.webp', '/images/head-images/your-xl.webp']}
                 title='Выбирай себя'
                 body="Курс по проработке самооценки. Учимся уверенности в себе"
             />

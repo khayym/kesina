@@ -64,7 +64,7 @@ export const HomePage = (props) => {
                 />
             </section>
             <Section3>
-                <LinedText text='услуги и обучения' className="sectionThreeLinedText" reff={reff} />
+                <LinedText size={60} text='услуги и обучения' className="sectionThreeLinedText" reff={reff} />
                 <Banner
                     url={'/images/banner-home/banner-home-1.webp'}
                     title={<h3>Консультация на любую тему</h3>}
@@ -144,7 +144,7 @@ export const HomePage = (props) => {
                     required={'Возможно онлайн'}
                     reverse
                     url={'/images/banner-home/banner-home-4.webp'}
-                    title={<h3>ВЫБИРАЙ СЕБЯ — <span style={{ fontWeight: 400, fontSize: '18px', fontFamily: 'Montserrat' }}>Курс по проработке самооценки. Учимся уверенности в себе</span></h3>}
+                    title={<h3>ВЫБИРАЙ СЕБЯ — <span className='bfs' style={{ fontWeight: 400, fontSize: '18px', fontFamily: 'Montserrat' }}>Курс по проработке самооценки. Учимся уверенности в себе</span></h3>}
                     price={<p><span> 29000 руб</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб</span>)</p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/your-choise')}>Узнать больше</CutomButton>]}
                     label={[
@@ -176,17 +176,17 @@ export const HomePage = (props) => {
             </Section4>
 
             <NodeSection>
-                <LinedText text='Преимущества' className="sectionThreeLinedText" />
+                <LinedText size={60} text='Преимущества' className="sectionThreeLinedText" />
                 <Section5 />
             </NodeSection>
 
             <Section6>
-                <LinedText text='вопросы и ответы' className="sectionThreeLinedText" />
+                <LinedText size={60} text='вопросы и ответы' className="sectionThreeLinedText" />
                 <TextAccordion />
             </Section6>
 
             <Section7>
-                <LinedText text='отзывы' className="sectionThreeLinedText" />
+                <LinedText size={60} text='отзывы' className="sectionThreeLinedText" />
                 <WpSlider />
             </Section7>
 

@@ -6,7 +6,6 @@ export const TextAccordion = () => {
     return (
         <Accord
             variant="filled"
-            defaultValue="customization"
             transitionDuration={400}
             chevron={<Image src={'/icons/plus.svg'} width={35} height={35} alt='plus-icon' />}
         >
@@ -48,7 +47,7 @@ const Accord = styled(Accordion)`
             /* identical to box height, or 34px */
             color: #FFFFFF;
             
-            @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+            @media(max-width:${({ theme: { breakPoints } }) => '577px'}){
                 font-size:18px;
             }
     }

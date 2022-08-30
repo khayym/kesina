@@ -49,8 +49,9 @@ export const SwiperCard = styled.div`
 
     }
 
-    @media(max-width:640px) {
+    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}) {
        height: 346px;
     }
+
 
 `

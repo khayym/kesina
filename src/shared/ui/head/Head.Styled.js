@@ -11,6 +11,12 @@ export const SectionOne = styled.section`
     .makeUpSecionDivOne, .hClass , .hClass div:first-child{
         display:flex;
         flex-direction:column;
+ 
+    }
+
+    .hClass div:first-child{
+        justify-content:center !important;
+ 
     }
 
 
@@ -61,10 +67,20 @@ export const SectionOne = styled.section`
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 30px;
     color: #FFFFFF;
     margin:0;
     max-width:486px;
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+        font-size:24px;
+    }
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+        font-size:24px;
+    }
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+        font-size:17px;
+    }
     }
 
 

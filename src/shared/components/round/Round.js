@@ -84,12 +84,15 @@ const Wrap = styled.div`
 const TextWrapper = styled.div`
     max-width:380px;
     align-items: center;
+    
     h4{
         font-family: 'Montserrat';
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 140%;
+        margin-top:2rem;
+        margin-bottom:2rem;
         text-transform: uppercase;
         color: #FFFFFF;
     }

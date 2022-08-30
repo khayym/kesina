@@ -116,17 +116,22 @@ export const ColText = styled.div`
         font-weight: 700;
         font-size: 28px;
         text-transform: uppercase;
-        text-align:center !important;       
+        text-align:center !important;  
+        
+        @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+            font-size:20px !important;
+        }
+
     }
 
     @media(min-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
         
         padding: 0 22px;
 
-        h2{
-            font-size:20px;
+        /* h2{
+            font-size:20px ;
             text-align:start;
-        }
+        } */
     }
 
 

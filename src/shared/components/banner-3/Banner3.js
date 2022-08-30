@@ -111,6 +111,10 @@ export const Two = styled.div`
 
     @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
         align-items:center;
+
+        h2{
+            font-size:17px;
+        }
     }
 
 `

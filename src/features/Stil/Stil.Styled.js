@@ -29,9 +29,15 @@ export const Container = styled.div`
     display:flex;
     align-items: center;
     margin-bottom:3rem;
-
     .licenceText{
       max-width:580px;
+      border: 1px solid #fff;
+
+      @media(max-width:1200px){
+        width: 100%;
+        max-width:100%;
+        margin-bottom:50px;
+      }
     }
 
     p{
@@ -40,7 +46,7 @@ export const Container = styled.div`
       font-weight: 400;
       font-size: 20px;
       color: #FFFFFF;
-      margin-top:4.375rem;
+      /* margin-top:4.375rem; */
     }
 
     h2{
@@ -58,11 +64,19 @@ export const Container = styled.div`
       display:flex;
       align-items: center;
 
+
+
     }
 
     @media (max-width:${({ theme: { breakPoints } }) => breakPoints.lg}){
       flex-direction: column;
 
+      .licenceImage{
+        /* border-right:50px solid #fff;  */
+        img{
+          /* border-right:50px solid #fff; */
+        }
+      }
       p{
         text-align: center;
       }

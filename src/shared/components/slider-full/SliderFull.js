@@ -31,7 +31,7 @@ export const SliderFull = () => {
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bigSliderImage">
-                        <Image src={'/images/big-slider/bg-slider-3.webp'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
+                        <Image src={'/images/big-slider/bg-slider-3.webp'} alt="Slider-full-imge" layout='fill' objectFit='contain' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>

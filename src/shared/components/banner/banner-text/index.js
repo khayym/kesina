@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router'
 import styled from 'styled-components'
 
 
@@ -18,8 +19,9 @@ const Nodes = ({ nodes: { childs, nodeIcon }, thin }) => {
 }
 
 export const BannerText = ({ title, required, label, price, buttons, reverse, thin }) => {
+    const { route } = useRouter();
     return (
-        <BannerTextStyled reverse>
+        <BannerTextStyled reverse route={route}>
             {title}
             {
                 label.map(({ labelTitle, nodes }, index) => {
@@ -54,6 +56,15 @@ const BannerTextStyled = styled.div`
     width: 100%;
     padding-top:1rem;
 
+    .bfs{
+        @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+            font-family: 'Montserrat' !important;
+            font-style: normal !important;
+            font-weight: 400 !important;
+            font-size: 16px !important;
+        }
+    }
+
     h3{
         font-family: 'Playfair Display';
         font-style: normal;
@@ -65,6 +76,10 @@ const BannerTextStyled = styled.div`
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
             text-align: center;
             font-size:17px;
+        }
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+            text-align: center;
+            font-size:20px;
         }
     }
 

@@ -10,20 +10,33 @@ export const Wrap = styled.footer`
     align-items: center;
     justify-content: center;
 
+
+    #icon{
+        align-self: center;
+    }
+
     @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
             height:420px;
             border-radius: 0px 200px 0px 0px;
     }
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+            height:491px;
+           
+    }
 
+    .outhor{
+        font-weight:500;
+    }
     .div {
         width: 100%;
         display: flex;
-        /* align-items: center; */
+        align-items: center;
         justify-content: space-between;
         padding:0 120px;
 
         @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
             flex-direction: column;
+            align-items: flex-start;
         }
         @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
             padding-left:24px;
@@ -67,6 +80,7 @@ export const Wrap = styled.footer`
 
     section:nth-child(1) {
         width: 70%;
+      
         div{
             display:flex;
             align-items: center;
@@ -80,7 +94,7 @@ export const Wrap = styled.footer`
                 /* display:none; */
                 width: 80%;
             }
-            @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+            @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
                 display:none;
                 /* width: 100%; */
             }
@@ -92,7 +106,7 @@ export const Wrap = styled.footer`
         display: flex;
         width: 100%;
         justify-content:space-between;
-        align-items:center;
+        /* align-items:center; */
 
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
             align-items:flex-start;
@@ -103,6 +117,10 @@ export const Wrap = styled.footer`
                 display: flex;
                 flex-direction:column;
                 gap:12px;
+        }
+
+        #email{
+            height:100%;
         }
 
         #email div{
