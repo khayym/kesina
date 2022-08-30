@@ -17,6 +17,7 @@ export const Layout = ({ children }) => {
             <Header />
             {children}
             <Footer viewport={scrollToTop} />
-        </div>)
+        </div>
+    )
 
 }

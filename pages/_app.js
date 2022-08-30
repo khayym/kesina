@@ -26,7 +26,7 @@ function MyApp({ Component, pageProps }) {
         <meta name="author" content="Khayyam Karimov" />
       </Head>
       {
-        loading ? <div style={{ width: '100%', height: '100%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'absolute', zIndex: 999999, backgroundColor: '#232323' }}>
+        loading ? <div style={{ width: '99%', height: '100%', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', position: 'absolute', zIndex: 999999, backgroundColor: '#232323' }}>
           <Loader color="#A91111" size="xl" variant="bars" />
         </div>
           : <Component {...pageProps} />
