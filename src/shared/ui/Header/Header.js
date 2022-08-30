@@ -10,6 +10,7 @@ export const Header = () => {
     return (
         <HeaderContainer path={pathname}>
             <div className='linksGroup'>
+                <Link href="/">Главная</Link>
                 <Link href="/makeup-hair">Make-up & Hair</Link>
                 <Link href="/stil">Стиль</Link>
                 <Link href="/your-choise">Bыбирай себя</Link>

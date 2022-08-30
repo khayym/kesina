@@ -19,6 +19,9 @@ export const CustomMenu = ({ pathname }) => {
             </Menu.Target>
 
             <Menu.Dropdown style={{ backgroundColor: '#FFF4F4B2', borderRadius: 0, marginLeft: '1.5rem', border: '1px solid #FFF4F4B2' }}>
+                <Menu.Item component={NextLink} href="/" style={{ fontSize: '15px', fontWeight: '500' }} onClick={() => setOpened(false)}>
+                    Главная
+                </Menu.Item>
                 <Menu.Item component={NextLink} href="/makeup-hair" style={{ fontSize: '15px', fontWeight: '500' }} onClick={() => setOpened(false)}>
                     Make-up & Hair
                 </Menu.Item>
