@@ -1,7 +1,7 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import { Autoplay, Pagination } from "swiper";
 import { SwiperCard, WpSwiperWrap } from './WpSlider.Styled';
 import { brakPoints, sliders } from './constants';
 import { useRouter } from 'next/router';
@@ -17,14 +17,11 @@ export const WpSlider = () => {
                     clickable: true,
                     dynamicBullets: true,
                 }}
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 loop={true}
                 spaceBetween={30}
                 breakpoints={brakPoints}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                autoplay={true}
                 className="mySwiperWp"
             >
                 {

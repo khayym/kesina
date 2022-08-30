@@ -8,7 +8,6 @@ export const SectionOne = styled.section`
     align-items: center;
     gap:90px;
 
-
     .makeUpSecionDivOne, .hClass , .hClass div:first-child{
         display:flex;
         flex-direction:column;
@@ -22,13 +21,16 @@ export const SectionOne = styled.section`
         min-width:400px;
         right: 0;
         z-index:-1;
+        @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+            max-height:500px;
+            
+        }
     }
-
     .hClass{
         margin-left:120px;
         align-items:flex-start;
         gap:70px;
-
+        height:70%;
         div:first-child {
         gap:30px;
         max-width: 616px;
@@ -36,6 +38,12 @@ export const SectionOne = styled.section`
         height: 100%;;
         }
     }
+
+    .hClass div:first-child{
+        justify-content:flex-end;
+        height: 100%;
+    }
+
 
     h1{
     font-family: 'Playfair Display';
@@ -46,6 +54,8 @@ export const SectionOne = styled.section`
     color: #FFF7EF;
     margin:0;
     }
+
+
 
     h4{
     font-family: 'Montserrat';
@@ -82,6 +92,9 @@ export const SectionOne = styled.section`
     @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
         gap:0px;
         .makeUpSecionDivOne {position: absolute; right: 0; width:80%; min-width:320px;}
+    }
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
         .arrowDownIcon {display: none !important;}
+        height:42rem;
     }
 `

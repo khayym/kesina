@@ -1,3 +1,4 @@
+import { Indicator } from "@mantine/core"
 import styled from "styled-components"
 
 export const Round = () => {
@@ -5,14 +6,14 @@ export const Round = () => {
         <Wrap>
             <div className='left'>
                 <Text>Телеведущая и ТВ эксперт в сфере красоты</Text>
-                <Text>Телеведущая и ТВ эксперт в сфере красоты</Text>
-                <Text>Телеведущая и ТВ эксперт в сфере красоты</Text>
+                <Text>Преподаватель по макияжу и базовым прическам с 2014 года</Text>
+                <Text>Санкт-Петербургские Невские Берега наградили кубком и премией за вклад в развитие индустрии красоты</Text>
             </div>
             <div className='middle' />
             <div className='right'>
-                <Text>Телеведущая и ТВ эксперт в сфере красоты</Text>
-                <Text>Телеведущая и ТВ эксперт в сфере красоты</Text>
-                <Text>Телеведущая и ТВ эксперт в сфере красоты</Text>
+                <Text>На моих курсах побывало более 700 учениц с разных стран мира</Text>
+                <Text>Была номинирована на премию PUDRA.RU в номинации beauty guru</Text>
+                <Text>Опытный преподаватель с большим чувством юмора и необходимой строгостью</Text>
             </div>
         </Wrap>
     )
@@ -22,8 +23,11 @@ export const Round = () => {
 const Text = ({ children }) => {
     return (
         <TextWrapper>
-            <div></div>
-            <h4>{children}</h4>
+            {/* <di></di> */}
+            <Indicator position='middle-start' offset={-15} color='#A91111' size={7}>
+                <h4>{children}</h4>
+
+            </Indicator>
         </TextWrapper>
     )
 }
@@ -33,41 +37,53 @@ const Wrap = styled.div`
     align-items: center;
     justify-content:space-between;
     margin-bottom:2rem;
-    
+    gap:2rem;
     .middle{
-        width:550px;
+        max-width:550px;
+        width: 100%;
         border-radius:500px;
+        /* height: 100%; */
         height:550px;
         background-image:url('/images/makeup/round.png');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: center;
         @media (max-width:${({ theme: { breakPoints } }) => '613px'}){
-        width:100%;
-            max-height:350px;
+        max-width:400px;
+        width: 100%;
+         max-height:400px;
+
+         }
+        @media (max-width:${({ theme: { breakPoints } }) => '450px'}){
+        max-width:300px;
+        width: 100%;
+         max-height:300px;
+
+         }
+        @media (max-width:${({ theme: { breakPoints } }) => '350px'}){
+        max-width:250px;
+        width: 100%;
+         max-height:250px;
+
          }
     }
 
     @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
         flex-direction:column;
+        gap:0rem;
     }
 
     .right, .left {
         margin-left:1rem;
+        @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+        width: 100%;
+        }
     }
 `
 
 const TextWrapper = styled.div`
     max-width:380px;
-    display:flex;
     align-items: center;
-    gap:20px;
-
-    div{
-        width: 7px;
-        height: 7px;
-        background: #A91111;
-        border-radius:10rem;
-    }
     h4{
         font-family: 'Montserrat';
         font-style: normal;
@@ -77,4 +93,14 @@ const TextWrapper = styled.div`
         text-transform: uppercase;
         color: #FFFFFF;
     }
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+        h4{font-size:14px;}
+       
+    }
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+        max-width: 100%;
+    }
+  
 `

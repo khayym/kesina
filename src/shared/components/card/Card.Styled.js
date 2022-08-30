@@ -8,11 +8,19 @@ position: relative;
 width:100%;
 height:100%;
 max-height:320px;
+
 :hover{
     cursor: pointer;
 }
-img{
+.youtube-card{
+    width:100%;
+    height:100%;
+    
+    iframe{
+    width:100%;
+    height:100%;
     border-radius: 30px;
+    }
 }
 
 @media (max-width:${({ theme: { breakPoints } }) => breakPoints.xs}){

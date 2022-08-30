@@ -48,4 +48,15 @@ const FullContainer = styled(Center)`
         font-size: 15px;
         color: #FFFFFF;
     }
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+       h2{
+        font-size:22px;
+       }
+    }
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+       h2{
+        font-size:32px;
+       }
+    }
 `

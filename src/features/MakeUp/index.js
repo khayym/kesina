@@ -22,7 +22,7 @@ export const MakeUpHairPage = () => {
                 handleScroll={() => scrollToBottom(reff)}
                 url={['/images/head-images/makeup-sm.png', '/images/head-images/makeup-md.png', '/images/head-images/makeup-xl.png']}
                 title='обучение MAKEUP & HAIR'
-                body={'Одно или несколько предложений об обучении.'}
+            // body={'Одно или несколько предложений об обучении.'}
             />
 
             <Container>

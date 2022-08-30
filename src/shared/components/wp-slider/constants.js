@@ -16,7 +16,7 @@ export const brakPoints = {
         centeredSlides: true,
     },
     768: {
-        slidesPerView: 2,
+        slidesPerView: 1.5,
         spaceBetween: 30,
         centeredSlides: false,
     },

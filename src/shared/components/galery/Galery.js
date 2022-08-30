@@ -4,9 +4,8 @@ import styled from 'styled-components';
 
 export const Galery = ({ imgs }) => {
     return (
-        <SimpleGrid
+        <StyledGrid
             cols={3}
-            style={{ margin: '4rem 0px' }}
             breakpoints={[
                 { maxWidth: "lg", cols: 3, spacing: 'md' },
                 { maxWidth: "sm", cols: 2, spacing: 'sm' },
@@ -19,7 +18,7 @@ export const Galery = ({ imgs }) => {
                 ))
             }
 
-        </SimpleGrid>
+        </StyledGrid>
     )
 }
 
@@ -42,5 +41,14 @@ const CardDiv = styled.div`
     @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
         width:300;
         height:300;
+    }
+`
+
+export const StyledGrid = styled(SimpleGrid)`
+    
+    margin: 70px 0 140px 0px;
+
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
+        margin: 40px 0 140px 0px;
     }
 `

@@ -25,15 +25,15 @@ export const StilPage = () => {
                 handleScroll={() => scrollToBottom(reff)}
                 url={['/images/head-images/stil-sm.png', '/images/head-images/stil-md.png', '/images/head-images/stil-xl.png']}
                 title='стиль и шопинг'
-                body="Текст об особенностях и принципах обучения у Ксении."
+            // body="Текст об особенностях и принципах обучения у Ксении."
             />
 
             <Container>
-                <LinedText text='создание имиджа”' size={60} reff={reff} />
+                <LinedText text='создание имиджа' size={60} reff={reff} />
                 <Banner
                     url={'/images/stil/2.png'}
                     // url2={'/images/stil/2.1.png'}
-                    title={<h3>стиль</h3>}
+                    title={<h3 style={{ textAlign: 'center' }}>стиль</h3>}
                     price={<p><span>29000 руб</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
@@ -79,7 +79,7 @@ export const StilPage = () => {
                     url={'/images/stil/3.png'}
                     reverse
                     url2={'/images/stil/3.1.png'}
-                    title={<h3>«Я-стилист»</h3>}
+                    title={<h3 style={{ textAlign: 'center' }}>«Я-стилист»</h3>}
                     price={<p><span>35000 руб</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
@@ -156,7 +156,7 @@ export const StilPage = () => {
                 ]} />
                 <LinedText text='Больше о стиле' size={60} />
                 <Slider
-                    links={['https://www.youtube.com/watch?v=9AB4zFGHx_k', 'https://www.youtube.com/watch?v=fHh5GiZ2LQo', 'https://www.youtube.com/watch?v=lkM2E7M6P4Q']}
+                    links={['9AB4zFGHx_k', 'fHh5GiZ2LQo', 'lkM2E7M6P4Q']}
                 />
 
             </Container>

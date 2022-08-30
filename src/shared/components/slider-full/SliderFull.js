@@ -1,18 +1,11 @@
 import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 import Image from 'next/image';
 import styled from "styled-components";
 
 export const SliderFull = () => {
-    const pagination = {
-        clickable: true,
-        renderBullet: function (index, className) {
-            return '<span class="sgDots"></span>';
-        },
-    };
-
     return (
         <StyledSwiperWrap>
             <Swiper
@@ -20,13 +13,10 @@ export const SliderFull = () => {
                     clickable: true,
 
                 }}
-                modules={[Pagination]}
+                modules={[Pagination, Autoplay]}
                 loop={true}
                 slidesPerView={1}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
+                autoplay={true}
                 className="mySwiper"
             >
                 <SwiperSlide>
@@ -61,7 +51,7 @@ const StyledSwiperWrap = styled.div`
 
     .bigSliderImage{
         width:100%;
-        height:1110px;
+        height:100vh;
         /* ---- */
         img{
             object-fit: cover;
@@ -71,7 +61,7 @@ const StyledSwiperWrap = styled.div`
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.lg}) {
             height:800px;
         }
-        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}) {
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}) {
             height:600px;
         }
 

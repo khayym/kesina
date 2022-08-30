@@ -21,8 +21,6 @@ export const BannerText = ({ title, required, label, price, buttons, reverse, th
     return (
         <BannerTextStyled reverse>
             {title}
-            {required && <div className='bannerTextRequired'>*<p>{required}</p></div>}
-
             {
                 label.map(({ labelTitle, nodes }, index) => {
                     return (
@@ -37,6 +35,8 @@ export const BannerText = ({ title, required, label, price, buttons, reverse, th
                 <p>Стоимость: </p>
                 {price}
             </div>
+            {required && <div className='bannerTextRequired'>*<p>{required}</p></div>}
+
             <div className='bannerButtonsGroup'>
                 {
                     buttons.map(button => button)
@@ -61,8 +61,10 @@ const BannerTextStyled = styled.div`
         font-size: 28px;
         text-transform: uppercase;
         color: #FFFDFB;
-        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
             text-align: center;
+            font-size:17px;
         }
     }
 
@@ -114,7 +116,7 @@ const BannerTextStyled = styled.div`
         align-items: center;
         gap:15px;
         flex-grow: 1;
-
+        justify-content: center;
         @media(max-width:823px) {
             flex-direction: column;
             margin-bottom: 20px;

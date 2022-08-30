@@ -1,9 +1,9 @@
 export const sliderBreakpoints = {
     300: {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
         spaceBetween: 10,
         grabCursor: true,
-        // centeredSlides: true,
+        centeredSlides: true,
         scrollbar: {
             draggable: true,
             enabled: true,

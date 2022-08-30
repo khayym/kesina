@@ -6,6 +6,10 @@ export const SwipperWrapper = styled.div`
     margin:61px 120px 0 120px; 
     /* height:320px; */
 
+    .swiper-scrollbar{
+        background-color: transparent;
+    }
+
     .mySwiper{
         height:370px;
 

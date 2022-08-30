@@ -5,13 +5,11 @@ import { Scrollbar } from "swiper";
 import { ImageCard } from '../card/Card';
 import { SwipperWrapper } from './Slider.Styled';
 import { sliderBreakpoints } from './constants';
-import { useRouter } from 'next/router';
 
 export const Slider = ({ links }) => {
-    const { push, pathname } = useRouter();
 
     return (
-        <SwipperWrapper onClick={() => fc()}>
+        <SwipperWrapper>
             <Swiper
                 scrollbar={{
                     horizontalClass: 'swiper-scrollbar-horizontal',
@@ -20,14 +18,14 @@ export const Slider = ({ links }) => {
                 modules={[Scrollbar]}
                 className="mySwiper"
             >
-                <SwiperSlide onClick={() => push(links[0])}>
-                    <ImageCard src={pathname === '/' ? '/images/slider/slider1.png' : '/cards/still2/1.png'} />
+                <SwiperSlide key={1}>
+                    <ImageCard src={links[0]} />
                 </SwiperSlide >
-                <SwiperSlide onClick={() => push(links[1])}>
-                    <ImageCard src={pathname === '/' ? '/images/slider/slider2.png' : '/cards/still2/2.png'} />
+                <SwiperSlide key={2}>
+                    <ImageCard src={links[1]} />
                 </SwiperSlide>
-                <SwiperSlide onClick={() => push(links[2])}>
-                    <ImageCard src={pathname === '/' ? '/images/slider/slider3.png' : '/cards/still2/3.png'} />
+                <SwiperSlide key={3}>
+                    <ImageCard src={links[2]} />
                 </SwiperSlide>
             </Swiper>
         </SwipperWrapper>

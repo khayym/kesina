@@ -77,7 +77,7 @@ export const Banner2 = ({ number, url, title, lists, price }) => {
                 </div>
                 {/* ---- */}
                 <div className="priceBtn">
-                    <CutomButton func={() => goToTelegram(push)}>Ознакомиться</CutomButton>
+                    <CutomButton func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>
                 </div>
             </ColText>
         </Wrap>

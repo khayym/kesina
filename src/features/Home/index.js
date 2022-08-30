@@ -1,4 +1,5 @@
 import { Grid } from '@mantine/core'
+import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useRef } from 'react'
 import { TextAccordion } from '../../shared/components/accordion/Accordion'
@@ -11,8 +12,7 @@ import { Slider } from '../../shared/components/slider/Slider'
 import { TextViaSpoiler } from '../../shared/components/text/Text'
 import { WpSlider } from '../../shared/components/wp-slider/WpSlider'
 import { goToTelegram } from '../../utils/nav'
-import { MainPageContainer, Section3, Section4, Section5, Section6, Section7 } from './Home.Styled'
-
+import { MainPageContainer, NodeSection, Section3, Section4, Section5, Section6, Section7 } from './Home.Styled'
 
 export const HomePage = (props) => {
     const { push } = useRouter();
@@ -60,7 +60,7 @@ export const HomePage = (props) => {
                     </Grid.Col>
                 </Grid>
                 <Slider
-                    links={['https://www.youtube.com/watch?v=ayA62KjRVN4', 'https://www.youtube.com/watch?v=vPjSwAO4EYs', 'https://www.youtube.com/watch?v=8FX4PoUyknc']}
+                    links={['ayA62KjRVN4', 'vPjSwAO4EYs', '8FX4PoUyknc']}
                 />
             </section>
             <Section3>
@@ -82,6 +82,7 @@ export const HomePage = (props) => {
                     ]} />
                 <Banner
                     reverse
+                    required={'Возможно онлайн'}
                     url={'/images/banner-home/banner-home-2.png'}
                     title={<h3>стиль</h3>}
                     price={<p><span>29000 руб</span></p>}
@@ -140,9 +141,10 @@ export const HomePage = (props) => {
                         }
                     ]} />
                 <Banner
+                    required={'Возможно онлайн'}
                     reverse
                     url={'/images/banner-home/banner-home-4.png'}
-                    title={<h3>ВЫБИРАЙ СЕБЯ — Курс по проработке самооценки. Учимся уверенности в себе</h3>}
+                    title={<h3>ВЫБИРАЙ СЕБЯ — <span style={{ fontWeight: 400, fontSize: '18px', fontFamily: 'Montserrat' }}>Курс по проработке самооценки. Учимся уверенности в себе</span></h3>}
                     price={<p><span> 29000 руб</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб</span>)</p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/your-choise')}>Узнать больше</CutomButton>]}
                     label={[
@@ -172,7 +174,11 @@ export const HomePage = (props) => {
             <Section4>
                 <SliderFull />
             </Section4>
-            <Section5 />
+
+            <NodeSection>
+                <LinedText text='Преимущества' className="sectionThreeLinedText" />
+                <Section5 />
+            </NodeSection>
 
             <Section6>
                 <LinedText text='вопросы и ответы' className="sectionThreeLinedText" />

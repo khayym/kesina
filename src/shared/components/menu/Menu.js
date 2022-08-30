@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Menu, Burger } from '@mantine/core';
 import { NextLink } from '@mantine/next';
+import styled from 'styled-components';
 
 export const CustomMenu = ({ pathname }) => {
     const [opened, setOpened] = useState(false);
@@ -17,7 +18,7 @@ export const CustomMenu = ({ pathname }) => {
                 />
             </Menu.Target>
 
-            <Menu.Dropdown style={{ backgroundColor: '#FFF4F4B2' }}>
+            <Menu.Dropdown style={{ backgroundColor: '#FFF4F4B2', borderRadius: 0, marginLeft: '1.5rem', border: '1px solid #FFF4F4B2' }}>
                 <Menu.Item component={NextLink} href="/makeup-hair" style={{ fontSize: '15px', fontWeight: '500' }} onClick={() => setOpened(false)}>
                     Make-up & Hair
                 </Menu.Item>
@@ -25,10 +26,11 @@ export const CustomMenu = ({ pathname }) => {
                     Стиль
                 </Menu.Item>
                 <Menu.Item component={NextLink} href="/your-choise" style={{ fontSize: '15px', fontWeight: '500' }} onClick={() => setOpened(false)}>
-                    выбирай себя
+                    Bыбирай себя
                 </Menu.Item>
 
             </Menu.Dropdown>
         </Menu>
     )
 }
+

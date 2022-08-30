@@ -62,7 +62,7 @@ export const Wrap = styled.div`
     border-radius: 0px 0px 30px 30px;
     gap:4rem;
 
-    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
         flex-direction:column;
         gap:1rem;
     }
@@ -81,7 +81,7 @@ export const One = styled.div`
     /* width: 60%; */
     width: 80%;
 
-    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+    @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
         height:230px;
         border-radius: 0px;
     }

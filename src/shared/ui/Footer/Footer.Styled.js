@@ -10,14 +10,15 @@ export const Wrap = styled.footer`
     align-items: center;
     justify-content: center;
 
-    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+    @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
             height:420px;
+            border-radius: 0px 200px 0px 0px;
     }
 
     .div {
         width: 100%;
         display: flex;
-        align-items: center;
+        /* align-items: center; */
         justify-content: space-between;
         padding:0 120px;
 
@@ -65,7 +66,7 @@ export const Wrap = styled.footer`
     }
 
     section:nth-child(1) {
-        width: 100%;
+        width: 70%;
         div{
             display:flex;
             align-items: center;
@@ -76,7 +77,12 @@ export const Wrap = styled.footer`
             }
 
             @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
+                /* display:none; */
+                width: 80%;
+            }
+            @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
                 display:none;
+                /* width: 100%; */
             }
         }
     }
@@ -113,7 +119,7 @@ export const Wrap = styled.footer`
             }
         }
 
-        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.sm}){
+        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
                 flex-direction:column;
 
             }
