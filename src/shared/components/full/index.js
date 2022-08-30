@@ -10,7 +10,7 @@ export const Full = () => {
     return (
         <Box style={{ height: '800px', margin: '7rem 0' }}>
             <BackgroundImage
-                src={'/images/makeup/full.png'}
+                src={'/images/makeup/full.webp'}
                 style={{ height: '800px', alignItems: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center' }}
             >
                 <FullContainer p="md" style={{ alignItems: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>

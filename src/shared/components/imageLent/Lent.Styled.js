@@ -7,7 +7,7 @@ export const LentStyled = styled(Box)`
     max-height: 601px;
     min-width: 296px;
     min-height: 211px;
-    background-image: url('/images/lent1.png');
+    background-image: url('/images/lent1.webp');
     border-top-right-radius: 20rem !important;
     border-bottom-right-radius: 20rem !important;
     background-position: center;

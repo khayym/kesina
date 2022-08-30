@@ -20,7 +20,7 @@ export const MakeUpHairPage = () => {
         <MakeUpWrap ref={viewport}>
             <PageHead
                 handleScroll={() => scrollToBottom(reff)}
-                url={['/images/head-images/makeup-sm.png', '/images/head-images/makeup-md.png', '/images/head-images/makeup-xl.png']}
+                url={['/images/head-images/makeup-sm.webp', '/images/head-images/makeup-md.webp', '/images/head-images/makeup-xl.webp']}
                 title='обучение MAKEUP & HAIR'
             // body={'Одно или несколько предложений об обучении.'}
             />
@@ -39,7 +39,7 @@ export const MakeUpHairPage = () => {
                     >
                         <Banner2
                             number={'/images/banner-makeup/1/text.svg'}
-                            url={['/images/banner-makeup/1/1-sm.png', '/images/banner-makeup/1/1-xl.png']}
+                            url={['/images/banner-makeup/1/1-sm.webp', '/images/banner-makeup/1/1-xl.webp']}
                             title='визажист-стилист'
                             lists={[{
                                 name: 'Если Вы хотите:',
@@ -76,7 +76,7 @@ export const MakeUpHairPage = () => {
                         />
                         <Banner2
                             number={'/images/banner-makeup/2/text.svg'}
-                            url={['/images/banner-makeup/2/2-sm.png', '/images/banner-makeup/2/2-xl.png']}
+                            url={['/images/banner-makeup/2/2-sm.webp', '/images/banner-makeup/2/2-xl.webp']}
                             title='База'
                             lists={[{
                                 name: 'Если Вы хотите:',
@@ -113,7 +113,7 @@ export const MakeUpHairPage = () => {
                         />
                         <Banner2
                             number={'/images/banner-makeup/3/text.svg'}
-                            url={['/images/banner-makeup/3/3-sm.png', '/images/banner-makeup/3/3-xl.png']}
+                            url={['/images/banner-makeup/3/3-sm.webp', '/images/banner-makeup/3/3-xl.webp']}
                             title='макияж для себя'
                             lists={[{
                                 name: 'Если Вы хотите:',
@@ -162,12 +162,12 @@ export const MakeUpHairPage = () => {
             <Container>
                 <LinedText text='Галерея' size={60} />
                 <Galery imgs={[
-                    '/cards/makeup/1.png',
-                    '/cards/makeup/2.png',
-                    '/cards/makeup/3.png',
-                    '/cards/makeup/4.png',
-                    '/cards/makeup/5.png',
-                    '/cards/makeup/6.png',
+                    '/cards/makeup/1.webp',
+                    '/cards/makeup/2.webp',
+                    '/cards/makeup/3.webp',
+                    '/cards/makeup/4.webp',
+                    '/cards/makeup/5.webp',
+                    '/cards/makeup/6.webp',
                 ]} />
             </Container>
         </MakeUpWrap>

@@ -23,7 +23,7 @@ export const StilPage = () => {
         <Wrap>
             <PageHead
                 handleScroll={() => scrollToBottom(reff)}
-                url={['/images/head-images/stil-sm.png', '/images/head-images/stil-md.png', '/images/head-images/stil-xl.png']}
+                url={['/images/head-images/stil-sm.webp', '/images/head-images/stil-md.webp', '/images/head-images/stil-xl.webp']}
                 title='стиль и шопинг'
             // body="Текст об особенностях и принципах обучения у Ксении."
             />
@@ -31,8 +31,8 @@ export const StilPage = () => {
             <Container>
                 <LinedText text='создание имиджа' size={60} reff={reff} />
                 <Banner
-                    url={'/images/stil/2.png'}
-                    // url2={'/images/stil/2.1.png'}
+                    url={'/images/stil/2.webp'}
+                    // url2={'/images/stil/2.1.webp'}
                     title={<h3 style={{ textAlign: 'center' }}>стиль</h3>}
                     price={<p><span>29000 руб</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
@@ -76,9 +76,9 @@ export const StilPage = () => {
                     <LinedText text='индивидуальное обучение' size={60} />
                 </div>
                 <Banner
-                    url={'/images/stil/3.png'}
+                    url={'/images/stil/3.webp'}
                     reverse
-                    url2={'/images/stil/3.1.png'}
+                    url2={'/images/stil/3.1.webp'}
                     title={<h3 style={{ textAlign: 'center' }}>«Я-стилист»</h3>}
                     price={<p><span>35000 руб</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
@@ -130,7 +130,7 @@ export const StilPage = () => {
 
                         <Image
                             radius="md"
-                            src='/images/stil/4.1.png'
+                            src='/images/stil/4.1.webp'
                             alt="Random unsplash image"
                             // height={592}
                             fit="cover"
@@ -147,12 +147,12 @@ export const StilPage = () => {
             <Container>
                 <LinedText text='Галерея' size={60} />
                 <Galery imgs={[
-                    '/cards/still/1.png',
-                    '/cards/still/2.png',
-                    '/cards/still/3.png',
-                    '/cards/still/4.png',
-                    '/cards/still/5.png',
-                    '/cards/still/6.png',
+                    '/cards/still/1.webp',
+                    '/cards/still/2.webp',
+                    '/cards/still/3.webp',
+                    '/cards/still/4.webp',
+                    '/cards/still/5.webp',
+                    '/cards/still/6.webp',
                 ]} />
                 <LinedText text='Больше о стиле' size={60} />
                 <Slider

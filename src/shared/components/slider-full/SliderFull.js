@@ -21,22 +21,22 @@ export const SliderFull = () => {
             >
                 <SwiperSlide>
                     <div className="bigSliderImage">
-                        <Image src={'/images/big-slider/bg-slider-1.png'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
+                        <Image src={'/images/big-slider/bg-slider-1.webp'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bigSliderImage">
-                        <Image src={'/images/big-slider/bg-slider-2.png'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
+                        <Image src={'/images/big-slider/bg-slider-2.webp'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bigSliderImage">
-                        <Image src={'/images/big-slider/bg-slider-3.png'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
+                        <Image src={'/images/big-slider/bg-slider-3.webp'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="bigSliderImage">
-                        <Image src={'/images/big-slider/bg-slider-4.png'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
+                        <Image src={'/images/big-slider/bg-slider-4.webp'} alt="Slider-full-imge" layout='fill' objectFit='cover' />
                     </div>
                 </SwiperSlide>
             </Swiper>

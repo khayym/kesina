@@ -66,7 +66,7 @@ export const HomePage = (props) => {
             <Section3>
                 <LinedText text='услуги и обучения' className="sectionThreeLinedText" reff={reff} />
                 <Banner
-                    url={'/images/banner-home/banner-home-1.png'}
+                    url={'/images/banner-home/banner-home-1.webp'}
                     title={<h3>Консультация на любую тему</h3>}
                     price={<p><span>9900 руб</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>]}
@@ -83,7 +83,7 @@ export const HomePage = (props) => {
                 <Banner
                     reverse
                     required={'Возможно онлайн'}
-                    url={'/images/banner-home/banner-home-2.png'}
+                    url={'/images/banner-home/banner-home-2.webp'}
                     title={<h3>стиль</h3>}
                     price={<p><span>29000 руб</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/stil')}>Узнать больше</CutomButton>]}
@@ -112,7 +112,7 @@ export const HomePage = (props) => {
                         }
                     ]} />
                 <Banner
-                    url={'/images/banner-home/banner-home-3.png'}
+                    url={'/images/banner-home/banner-home-3.webp'}
                     title={<h3>MAKEUP & HAIR</h3>}
                     price={<p>от <span> 18500 руб</span> до <span>48500 руб</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/makeup-hair')}>Узнать больше</CutomButton>]}
@@ -143,7 +143,7 @@ export const HomePage = (props) => {
                 <Banner
                     required={'Возможно онлайн'}
                     reverse
-                    url={'/images/banner-home/banner-home-4.png'}
+                    url={'/images/banner-home/banner-home-4.webp'}
                     title={<h3>ВЫБИРАЙ СЕБЯ — <span style={{ fontWeight: 400, fontSize: '18px', fontFamily: 'Montserrat' }}>Курс по проработке самооценки. Учимся уверенности в себе</span></h3>}
                     price={<p><span> 29000 руб</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб</span>)</p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/your-choise')}>Узнать больше</CutomButton>]}

@@ -44,7 +44,7 @@ const Wrap = styled.div`
         border-radius:500px;
         /* height: 100%; */
         height:550px;
-        background-image:url('/images/makeup/round.png');
+        background-image:url('/images/makeup/round.webp');
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;

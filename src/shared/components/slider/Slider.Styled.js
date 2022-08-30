@@ -12,7 +12,6 @@ export const SwipperWrapper = styled.div`
 
     .mySwiper{
         height:370px;
-
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.xs}) { 
             height:250px;
          }

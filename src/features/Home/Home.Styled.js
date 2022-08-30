@@ -5,7 +5,7 @@ export const MainPageContainer = styled.main`
     flex-direction: column;
     gap:2rem;
     section:nth-child(1) {
-        background-image:url(/images/main.png);
+        background-image:url(/images/main.webp);
         height: 56rem;
         background-repeat: no-repeat;
         display: flex;
@@ -13,12 +13,12 @@ export const MainPageContainer = styled.main`
         background-size: cover;
 
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.tablet}) {
-            background-image:url(/images/main2.png);
+            background-image:url(/images/main2.webp);
             /* height:664px; */
             /* height:100%; */
         }
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}) {
-            background-image:url(/images/main3.png);
+            background-image:url(/images/main3.webp);
             background-size: cover;
             height:600px;
         }

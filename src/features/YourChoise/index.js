@@ -19,15 +19,15 @@ export const YourChoisePage = () => {
         <Wrap>
             <PageHead
                 handleScroll={() => scrollToBottom(reff)}
-                url={['/images/head-images/your-sm.png', '/images/head-images/your-md.png', '/images/head-images/your-xl.png']}
+                url={['/images/head-images/your-sm.webp', '/images/head-images/your-md.webp', '/images/head-images/your-xl.webp']}
                 title='Выбирай себя'
                 body="Курс по проработке самооценки. Учимся уверенности в себе"
             />
             <Container>
                 <LinedText text='об обучении “Выбирай себя”' size={60} left={false} right={false} reff={reff} />
                 <Banner
-                    url={'/images/your/1.png'}
-                    url2={'/images/your/2.png'}
+                    url={'/images/your/1.webp'}
+                    url2={'/images/your/2.webp'}
                     top
                     thin
                     title={<h3>Выбирай себя</h3>}

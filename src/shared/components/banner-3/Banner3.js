@@ -69,7 +69,7 @@ export const Wrap = styled.div`
 `
 
 export const One = styled.div`
-    background:url('/images/banner-makeup/uslu.png');
+    background:url('/images/banner-makeup/uslu.webp');
     background-repeat: no-repeat;
     background-size: cover;
     background-clip: content;
@@ -175,5 +175,5 @@ color: #FFFFFF;
 
 
 export const Pht = styled(One)`
- background:url('/images/stil/1.png');
+ background:url('/images/stil/1.webp');
 `
