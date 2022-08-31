@@ -4,7 +4,7 @@ import { AccordionWrap, ColImage, ColText, Div, ListItem, Lists, Price, Wrap } f
 import { CutomButton } from '../button/Button'
 import { useRouter } from 'next/router'
 import { goToTelegram } from '../../../utils/nav'
-import { Accordion, Spoiler } from '@mantine/core'
+import { Accordion } from '@mantine/core'
 
 export const Banner2 = ({ number, url, title, lists, price }) => {
     const { push } = useRouter();
@@ -17,9 +17,6 @@ export const Banner2 = ({ number, url, title, lists, price }) => {
                     number={number}
                     url={url}
                 />
-                <div className='numberIconClass'>
-                    <Image src={number} layout='fill' objectFit='cover' alt='make-up-1' />
-                </div>
             </ColImage>
 
 
