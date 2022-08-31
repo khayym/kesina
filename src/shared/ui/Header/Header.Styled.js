@@ -39,7 +39,7 @@ export const HeaderContainer = styled.header`
         display: flex;
         gap:63px;
 
-        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.xs}) {
+        @media(max-width:${({ theme: { breakPoints } }) => '750px'}) {
             display: none;
         }
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.md}) {
@@ -52,7 +52,7 @@ export const HeaderContainer = styled.header`
 
     div:nth-child(2) {
         display: none;
-        @media(max-width:${({ theme: { breakPoints } }) => breakPoints.xs}) {
+        @media(max-width:${({ theme: { breakPoints } }) => '750px'}) {
             display:block ;
         }
     }

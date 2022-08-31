@@ -131,7 +131,7 @@ const BannerTextStyled = styled.div`
         align-items: center;
         gap:15px;
         flex-grow: 1;
-        justify-content: center;
+        justify-content: ${props => props.route == '/' ? 'flex-start' : 'center'};
         @media(max-width:823px) {
             flex-direction: column;
             margin-bottom: 20px;
