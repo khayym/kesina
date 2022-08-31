@@ -31,7 +31,6 @@ export const Container = styled.div`
     margin-bottom:3rem;
     .licenceText{
       max-width:580px;
-      border: 1px solid #fff;
 
       @media(max-width:1200px){
         width: 100%;
