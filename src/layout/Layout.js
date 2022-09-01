@@ -13,10 +13,11 @@ export const Layout = ({ children }) => {
     }
 
     return (
-        <div ref={viewport}>
-            <Header />
+        <div ref={viewport} style={{ border: "1px solid #fff", height: "98vh", display: "flex", alignItems: "center", justifyContent: 'center' }}>
+            <h1 style={{ fontSize: "200px" }}>Not working</h1>
+            {/* <Header />
             {children}
-            <Footer viewport={scrollToTop} />
+            <Footer viewport={scrollToTop} /> */}
         </div>
     )
 
