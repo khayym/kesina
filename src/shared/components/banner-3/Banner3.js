@@ -20,12 +20,12 @@ export const Banner3 = () => {
                             <Item>Любой образ от меня на мероприятие </Item>
                             <div id='try'>
                                 <h5>Стоимость:</h5>
-                                <h6>8500 руб</h6>
+                                <h6>8500 руб.</h6>
                             </div>
                             <Item style={{ marginTop: '20px' }}>Свадебный образ от меня </Item>
                             <div id='try'>
                                 <h5>Стоимость:</h5>
-                                <h6>8500 руб</h6>
+                                <h6>8500 руб.</h6>
                             </div>
                         </Lists>
                         <CutomButton func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>
@@ -39,7 +39,7 @@ export const Banner3 = () => {
                             <Item>Составление 2-3 образов для фотосессии</Item>
                             <div id='try'>
                                 <h5>Стоимость:</h5>
-                                <h6>15000 руб</h6>
+                                <h6>15000 руб.</h6>
                             </div>
                         </Lists>
                         <CutomButton func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>

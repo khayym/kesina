@@ -62,7 +62,7 @@ export const MakeUpHairPage = () => {
                             price={[
                                 {
                                     title: 'Стоимость:',
-                                    price: <div><span> 48500 руб</span> (есть возможность оплачивать в рассрочку по <span>10500 руб</span> )</div>
+                                    price: <div><span> 48500 руб.</span> (есть возможность оплачивать в рассрочку по <span>10500 руб.</span> )</div>
                                 },
                                 {
                                     title: 'Условия:',
@@ -99,7 +99,7 @@ export const MakeUpHairPage = () => {
                             price={[
                                 {
                                     title: 'Стоимость:',
-                                    price: <div><span>29500 руб</span></div>
+                                    price: <div><span>29500 руб.</span></div>
                                 },
                                 {
                                     title: 'Условия:',
@@ -135,7 +135,7 @@ export const MakeUpHairPage = () => {
                             price={[
                                 {
                                     title: 'Стоимость:',
-                                    price: <div><span>18500 руб</span></div>
+                                    price: <div><span>18500 руб.</span></div>
                                 },
                                 {
                                     title: 'Условия:',

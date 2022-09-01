@@ -34,7 +34,7 @@ export const StilPage = () => {
                     url={'/images/stil/2.webp'}
                     // url2={'/images/stil/2.1.webp'}
                     title={<h3 style={{ textAlign: 'center' }}>стиль</h3>}
-                    price={<p><span>29000 руб</span></p>}
+                    price={<p><span>29000 руб.</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {
@@ -80,7 +80,7 @@ export const StilPage = () => {
                     reverse
                     url2={'/images/stil/3.1.webp'}
                     title={<h3 style={{ textAlign: 'center' }}>«Я-стилист»</h3>}
-                    price={<p><span>35000 руб</span></p>}
+                    price={<p><span>35000 руб.</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {

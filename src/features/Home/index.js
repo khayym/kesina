@@ -38,23 +38,17 @@ export const HomePage = (props) => {
                         <LinedText text={'обо мне'} className="sectionOneLinedText2" left={false} size={60} />
                         <TextViaSpoiler>
                             <h4>
-                                С 2014 года я являюсь преподавателем по макияжу и
-                                базовым прическам, визажистом, имиджмейкером (училась на персонального стилиста в Милане в 2019 году),
-                                телеведущей и экспертом в сфере красоты, женским психологом.
+                                С 2014 года я являюсь преподавателем по макияжу и базовым прическам, визажистом,
+                                имиджмейкером (училась на персонального стилиста в Милане в 2019 году), телеведущей и экспертом в сфере красоты, женским психологом.
                             </h4>
                             <h4>
-                                С 2017 года в Санкт - Петербурге существовала школа макияжа EFFEKTNO,
-                                далее я переехала в Москву.На моих курсах побывало более 700 учениц.
-                                Курсы преподавались в Воронеже, Тюмени, Ростове на Дону, Екатеринбурге и других городах.
-                                За 7 лет ко мне на курсы приезжали ученицы из Финляндии, Швеции, Израиля и даже США.
-                                Многие из которых вы можете увидеть во влогах на YouTube.Была номинирована на премию PUDRA.RU в
-                                номинации Beauty guru, а Питерские Невские берега наградили меня кубком и премией за вклад в развитие
-                                индустрии красоты.
-
+                                С 2017 года в Санкт-Петербурге существовала школа макияжа EFFEKTNO, далее я переехала в Москву.
+                                На моих курсах побывало более 700 учениц. Курсы преподавались в Воронеже, Тюмени, Ростове-на-Дону, Екатеринбурге и других городах.
+                                За 7 лет ко мне на курсы приезжали ученицы из Финляндии, Швеции, Израиля и даже США. Многих из которых вы можете увидеть во влогах на YouTube.
+                                Я была номинирована на премию PUDRA.RU в номинации Beauty guru, а Питерские Невские берега наградили меня кубком и премией за вклад в развитие индустрии красоты.
                             </h4>
                             <h4>
-                                Я опытный преподаватель с большим чувством юмора и необходимой строгостью и я
-                                помогу вам измениться!
+                                Я опытный преподаватель с большим чувством юмора и необходимой строгостью и я помогу вам измениться!
                             </h4>
                         </TextViaSpoiler>
                     </Grid.Col>
@@ -68,7 +62,7 @@ export const HomePage = (props) => {
                 <Banner
                     url={'/images/banner-home/banner-home-1.webp'}
                     title={<h3>Консультация на любую тему</h3>}
-                    price={<p><span>9900 руб</span></p>}
+                    price={<p><span>9900 руб.</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>]}
                     label={[
                         {
@@ -85,11 +79,11 @@ export const HomePage = (props) => {
                     required={'Возможно онлайн'}
                     url={'/images/banner-home/banner-home-2.webp'}
                     title={<h3>стиль</h3>}
-                    price={<p><span>29000 руб</span></p>}
+                    price={<p><span>29000 руб.</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/stil')}>Узнать больше</CutomButton>]}
                     label={[
                         {
-                            labelTitle: 'Услуга подойдет Вам если Вы хотите:',
+                            labelTitle: 'Услуга подойдет Вам, если Вы хотите:',
                             nodes: {
                                 nodeStyle: 'column',
                                 childs: [
@@ -114,11 +108,11 @@ export const HomePage = (props) => {
                 <Banner
                     url={'/images/banner-home/banner-home-3.webp'}
                     title={<h3>MAKEUP & HAIR</h3>}
-                    price={<p>от <span> 18500 руб</span> до <span>48500 руб</span></p>}
+                    price={<p>от <span> 18500 руб.</span> до <span>48500 руб.</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/makeup-hair')}>Узнать больше</CutomButton>]}
                     label={[
                         {
-                            labelTitle: 'Услуга подойдет Вам если Вы хотите:',
+                            labelTitle: 'Курс подойдет Вам, если Вы хотите:',
                             nodes: {
                                 nodeStyle: 'column',
                                 childs: [
@@ -145,11 +139,11 @@ export const HomePage = (props) => {
                     reverse
                     url={'/images/banner-home/banner-home-4.webp'}
                     title={<h3>ВЫБИРАЙ СЕБЯ — <span className='bfs' style={{ fontWeight: 400, fontSize: '18px', fontFamily: 'Montserrat' }}>Курс по проработке самооценки. Учимся уверенности в себе</span></h3>}
-                    price={<p><span> 29000 руб</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб</span>)</p>}
+                    price={<p><span> 29000 руб.</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб.</span>)</p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/your-choise')}>Узнать больше</CutomButton>]}
                     label={[
                         {
-                            labelTitle: 'Курс подойдет Вам если Вы хотите:',
+                            labelTitle: 'Курс подойдет Вам, если Вы хотите:',
                             nodes: {
                                 nodeStyle: 'column',
                                 childs: [

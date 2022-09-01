@@ -31,7 +31,7 @@ export const YourChoisePage = () => {
                     top
                     thin
                     title={<h3>Выбирай себя</h3>}
-                    price={<p>Стоимость: <span>29000 руб</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб</span>)</p>}
+                    price={<p>Стоимость: <span>29000 руб.</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб.</span>)</p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {
