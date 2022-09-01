@@ -15,7 +15,7 @@ export const Full = () => {
             >
                 <FullContainer p="md" style={{ alignItems: 'center', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column' }}>
                     <h2>Обучение в подарок</h2>
-                    <h6>Свяжитесь со мной лично и закажите подарочной сертификат подруге, сестре или коллеге в подарок на любое обучение или услугу.</h6>
+                    <h6>Свяжитесь со мной лично и закажите подарочный сертификат на любое обучение или услуге подруге, сестре или коллеге..</h6>
                     <CutomButton func={() => goToTelegram(push)}>Хочу заказать!</CutomButton>
                 </FullContainer>
             </BackgroundImage>

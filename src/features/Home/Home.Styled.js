@@ -6,7 +6,7 @@ export const MainPageContainer = styled.main`
     gap:2rem;
     section:nth-child(1) {
         background-image:url(/images/main.webp);
-        height: 56rem;
+        height: 100vh;
         background-repeat: no-repeat;
         display: flex;
         align-items: center;
@@ -20,7 +20,7 @@ export const MainPageContainer = styled.main`
         @media(max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}) {
             background-image:url(/images/main3.webp);
             background-size: cover;
-            height:600px;
+            /* height:600px; */
         }
 
     

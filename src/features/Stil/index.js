@@ -3,7 +3,7 @@ import { Banner } from '../../shared/components/banner/Banner'
 import { CutomButton } from '../../shared/components/button/Button'
 import { LinedText } from '../../shared/components/lindedText/LinedText'
 import { PageHead } from '../../shared/ui/head/Head'
-import { Container, Wrap } from './Stil.Styled'
+import { Container, LicenceStyled, Wrap } from './Stil.Styled'
 import { Banner3 } from '../../shared/components/banner-3/Banner3'
 import { Image } from '@mantine/core';
 import { Round } from '../../shared/components/round/Round'
@@ -100,7 +100,7 @@ export const StilPage = () => {
                             nodes: {
                                 nodeStyle: 'column',
                                 childs: [
-                                    'Работа с МАСС-МАРКЕТ сегментом. Куда ведем какого клиента. На что смотреть в масс-маркете, как выработать правильный подход и насмотренность для таких покупок',
+                                    'Работа с масс-маркет сегментом. Куда вести клиента. На что смотреть в масс-маркете, как выработать правильный подход и насмотренность для таких покупок',
                                     'МИДЛ-СЕГМЕНТ в Росии. Едем в основные шоурумы и ателье высокого качества, на что обращаем внимание. Тренды',
                                     'Работа с ЛЮКС-СЕГМЕНТОМ. Типизация брендов, история. Какому бренду какой клиент, как выбирать аксессуары и обувь',
                                 ],
@@ -118,9 +118,13 @@ export const StilPage = () => {
                     ]} />
                 <LinedText text='услуга' size={60} />
                 <Banner3 />
+
                 <div className='licenceLine1'>
                     <LinedText text='Я обучалась в милане' size={60} />
                 </div>
+            </Container>
+            <LicenceStyled>
+
                 <div className='licence'>
                     <div className='licenceText'>
                         <h2>Я обучалась в милане</h2>
@@ -137,6 +141,8 @@ export const StilPage = () => {
                         />
                     </div>
                 </div>
+            </LicenceStyled>
+            <Container>
 
                 <LinedText text='почему я?' size={60} />
                 <Round />

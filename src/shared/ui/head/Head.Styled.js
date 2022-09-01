@@ -111,6 +111,6 @@ export const SectionOne = styled.section`
     }
     @media (max-width:${({ theme: { breakPoints } }) => breakPoints.mobile}){
         .arrowDownIcon {display: none !important;}
-        height:42rem;
+        height:100vh;
     }
 `

@@ -11,7 +11,7 @@ export const Round = () => {
             </div>
             <div className='middle' />
             <div className='right'>
-                <Text>На моих курсах побывало более 700 учениц с разных стран мира</Text>
+                <Text>мои курсЫ ЗАКОНЧИЛИ БОЛЕЕ 700 учениц с разных стран мира</Text>
                 <Text>Была номинирована на премию PUDRA.RU в номинации beauty guru</Text>
                 <Text>Опытный преподаватель с большим чувством юмора и необходимой строгостью</Text>
             </div>
@@ -75,8 +75,12 @@ const Wrap = styled.div`
 
     .right, .left {
         margin-left:1rem;
+        gap:2rem;
+        display:flex;
+        flex-direction:column;
         @media (max-width:${({ theme: { breakPoints } }) => breakPoints.md}){
         width: 100%;
+        gap:0px;
         }
     }
 `
@@ -91,8 +95,8 @@ const TextWrapper = styled.div`
         font-weight: 400;
         font-size: 20px;
         line-height: 140%;
-        margin-top:2rem;
-        margin-bottom:2rem;
+        /* margin-top:2rem; */
+        /* margin-bottom:2rem; */
         text-transform: uppercase;
         color: #FFFFFF;
     }

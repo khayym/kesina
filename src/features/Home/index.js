@@ -14,7 +14,7 @@ import { WpSlider } from '../../shared/components/wp-slider/WpSlider'
 import { goToTelegram } from '../../utils/nav'
 import { MainPageContainer, NodeSection, Section3, Section4, Section5, Section6, Section7 } from './Home.Styled'
 
-export const HomePage = (props) => {
+export const HomePage = () => {
     const { push } = useRouter();
     const reff = useRef(null);
     const scrollToBottom = (reff) => reff.current.scrollIntoView({ behavior: 'smooth', block: 'start' })

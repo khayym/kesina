@@ -25,7 +25,7 @@ export const Banner3 = () => {
                             <Item style={{ marginTop: '20px' }}>Свадебный образ от меня </Item>
                             <div id='try'>
                                 <h5>Стоимость:</h5>
-                                <h6>8500 руб.</h6>
+                                <h6>18500 руб.</h6>
                             </div>
                         </Lists>
                         <CutomButton func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>
