@@ -124,7 +124,6 @@ export const StilPage = () => {
                 </div>
             </Container>
             <LicenceStyled>
-
                 <div className='licence'>
                     <div className='licenceText'>
                         <h2>Я обучалась в милане</h2>

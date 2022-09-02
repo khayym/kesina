@@ -93,10 +93,11 @@ export const Container = styled.div`
 `
 
 export const LicenceStyled = styled.div`
-  margin: 0 120px;
+  /* margin: 0 120px; */
+  margin:0 0 0 120px;
 
   @media (max-width:${({ theme: { breakPoints } }) => breakPoints.lg}){
-    margin: 0 0px;
+    margin:0 0 0 24px;
 }
 
   .licence{
@@ -137,9 +138,6 @@ h2{
   position: relative;
   display:flex;
   align-items: center;
-
-
-
 }
 
 @media (max-width:${({ theme: { breakPoints } }) => breakPoints.lg}){
@@ -154,7 +152,9 @@ h2{
     }
   }
   p{
-    text-align: center;
+    text-align: left;
+    margin-left:24px;
+    margin-right:24px;
   }
 
   h2{

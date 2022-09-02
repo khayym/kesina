@@ -179,5 +179,8 @@ color: #FFFFFF;
 
 
 export const Pht = styled(One)`
+background-repeat: no-repeat;
+/* border: 1px solid #fff; */
+background-size: cover !important;
  background:url('/images/stil/1.webp');
 `
