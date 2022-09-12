@@ -79,7 +79,7 @@ export const HomePage = () => {
                     required={'Возможно онлайн'}
                     url={'/images/banner-home/banner-home-2.webp'}
                     title={<h3>стиль</h3>}
-                    price={<p><span>29000 руб.</span></p>}
+                    price={<p><span>34000 руб.</span></p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/stil')}>Узнать больше</CutomButton>]}
                     label={[
                         {
@@ -100,7 +100,7 @@ export const HomePage = () => {
                             labelTitle: 'Длительность:',
                             nodes: {
                                 nodeStyle: 'row',
-                                childs: ['дни и время по договоренности'],
+                                childs: ['время одной встречи до 2 часов , шоппинг сопровождения до 3,5-4 часов'],
                                 nodeIcon: false
                             }
                         }
@@ -129,7 +129,7 @@ export const HomePage = () => {
                             labelTitle: 'Длительность:',
                             nodes: {
                                 nodeStyle: 'row',
-                                childs: ['дни и время по договоренности '],
+                                childs: ['время одной встречи до 2 часов , шоппинг сопровождения до 3,5-4 часов '],
                                 nodeIcon: false
                             }
                         }
@@ -139,7 +139,7 @@ export const HomePage = () => {
                     reverse
                     url={'/images/banner-home/banner-home-4.webp'}
                     title={<h3>ВЫБИРАЙ СЕБЯ — <span className='bfs' style={{ fontWeight: 400, fontSize: '18px', fontFamily: 'Montserrat' }}>Курс по проработке самооценки. Учимся уверенности в себе</span></h3>}
-                    price={<p><span> 29000 руб.</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб.</span>)</p>}
+                    price={<p><span> 34000 руб.</span> (есть возможность прохождения только одного блока, тогда его стоимость <span>14500 руб.</span>)</p>}
                     buttons={[<CutomButton key={1} func={() => goToTelegram(push)}>Заказать</CutomButton>, <CutomButton key={2} variant={'secondary'} func={() => push('/your-choise')}>Узнать больше</CutomButton>]}
                     label={[
                         {
@@ -159,7 +159,7 @@ export const HomePage = () => {
                             labelTitle: 'Длительность:',
                             nodes: {
                                 nodeStyle: 'row',
-                                childs: ['дни и время по договоренности '],
+                                childs: ['время одной встречи до 2 часов , шоппинг сопровождения до 3,5-4 часов '],
                                 nodeIcon: false
                             }
                         }

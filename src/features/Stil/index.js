@@ -34,7 +34,7 @@ export const StilPage = () => {
                     url={'/images/stil/2.webp'}
                     // url2={'/images/stil/2.1.webp'}
                     title={<h3 style={{ textAlign: 'center' }}>стиль</h3>}
-                    price={<p><span>29000 руб.</span></p>}
+                    price={<p><span>34000 руб.</span></p>}
                     buttons={[<CutomButton sty={{ marginBottom: '2rem' }} key={1} func={() => goToTelegram(push)}>Хочу записаться!</CutomButton>]}
                     label={[
                         {
@@ -67,7 +67,7 @@ export const StilPage = () => {
                             labelTitle: 'Условия:',
                             nodes: {
                                 nodeStyle: 'row',
-                                childs: ['время занятий не ограничено, дни и время по договоренности'],
+                                childs: ['Условия: время одной встречи до 2 часов , шоппинг сопровождения до 3,5-4 часов'],
                                 nodeIcon: false
                             }
                         }
@@ -159,15 +159,15 @@ export const StilPage = () => {
                     '/cards/still/5.webp',
                     '/cards/still/6.webp',
                 ]} />
-                <LinedText text='Больше о стиле' size={60} />
+                {/* <LinedText text='Больше о стиле' size={60} />
                 <Slider
                     links={['9AB4zFGHx_k', 'fHh5GiZ2LQo', 'lkM2E7M6P4Q']}
-                />
+                /> */}
 
             </Container>
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
+            {/* <div style={{ display: 'flex', justifyContent: 'center', marginTop: '3rem' }}>
                 <CutomButton func={() => push('https://www.youtube.com/c/makeksenia')}>Перейти на мой канал</CutomButton>
-            </div>
+            </div> */}
         </Wrap >
     )
 }
