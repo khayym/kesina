@@ -53,9 +53,9 @@ export const HomePage = () => {
                         </TextViaSpoiler>
                     </Grid.Col>
                 </Grid>
-                <Slider
+                {/* <Slider
                     links={['ayA62KjRVN4', 'vPjSwAO4EYs', '8FX4PoUyknc']}
-                />
+                /> */}
             </section>
             <Section3>
                 <LinedText size={60} text='услуги и обучения' className="sectionThreeLinedText" reff={reff} />
